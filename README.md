@@ -15,7 +15,7 @@ Stage Fright is a planned modular, replayable, single-player-first theatrical su
 
 **Repository setup only.** No ghost AI, cast behavior, damage simulation, episode system, or playable game loop has been implemented.
 
-See [architecture](docs/ARCHITECTURE.md), [roadmap](docs/ROADMAP.md), and the [draft game design](docs/design/STAGE_FRIGHT_DESIGN_v0.1.md) when the scaffold is populated.
+See the [staged experimental roadmap](docs/ROADMAP.md), [working terminology](docs/TERMINOLOGY.md), [Version 0 proposed contracts](docs/contracts/V0_PLANNED_CONTRACTS.md), [Version 0 gameplay specification](docs/design/V0_GAMEPLAY.md), [Stage 1 visual exploration](docs/design/STAGE1_VISUAL_DIRECTION.md), [architecture](docs/ARCHITECTURE.md), and the [original draft game design](docs/design/STAGE_FRIGHT_DESIGN_v0.1.md).
 
 ## Development
 

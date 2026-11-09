@@ -2,7 +2,7 @@
 
 This is a game repository, not an agent identity or memory repository.
 
-- Follow the explicit task scope. The present assignment is **repo setup only**, without gameplay implementation.
+- Follow the explicit task scope. Current direction is **Version 0 design documentation**, without gameplay implementation or art production. Future stages require explicit owner authorization.
 - Keep changes minimal, reviewable and honestly verified. Never claim a build or test that has not run.
 - Do not introduce hidden telemetry, Easter eggs, external effects or secrets.
 - Treat previously accepted interfaces as contracts; propose compatibility changes before modifying them.
