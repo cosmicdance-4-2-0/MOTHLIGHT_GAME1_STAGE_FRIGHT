@@ -11,9 +11,10 @@ Future checkpoints are proposed, not pre-authorized implementation.
 - [x] Import the existing draft design and architecture documentation
 - [x] Add a smoke test and CI check definition
 - [ ] Generate and verify a committed lockfile (registry access needed)
-- [ ] Run dependency-backed build, typecheck and browser smoke check
+- [x] Run dependency-backed build, typecheck and tests (CI success at `cc43763ed997ed863e809eb2051624168bcd177a`)
+- [ ] Verify the browser smoke screen actually renders
 
-R0 remains **provisional** until the unchecked gates pass.
+R0 remains **provisional** until the lockfile and browser-verification gates pass.
 
 ## R1 — Headless simulation (future)
 
