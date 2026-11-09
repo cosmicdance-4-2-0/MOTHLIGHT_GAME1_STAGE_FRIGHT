@@ -1,0 +1,19 @@
+{
+  "name": "@stage-fright/web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@stage-fright/core": "0.0.0",
+    "pixi.js": "8.22.0"
+  },
+  "devDependencies": {
+    "vite": "7.1.2"
+  }
+}

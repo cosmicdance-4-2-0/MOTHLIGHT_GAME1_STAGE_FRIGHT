@@ -1,0 +1,24 @@
+{
+  "name": "stage-fright",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Stage Fright — modular haunted-theater game bootstrap",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run build --workspace @stage-fright/core && npm run dev --workspace @stage-fright/web",
+    "build": "npm run build --workspace @stage-fright/core && npm run build --workspace @stage-fright/web",
+    "typecheck": "npm run build --workspace @stage-fright/core && npm run typecheck --workspace @stage-fright/web",
+    "test": "npm run build --workspace @stage-fright/core && npm run test --workspace @stage-fright/core",
+    "check": "npm run typecheck && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
