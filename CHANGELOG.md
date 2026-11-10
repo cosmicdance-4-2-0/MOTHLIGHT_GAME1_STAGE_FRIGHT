@@ -36,4 +36,4 @@ This log tracks **recorded development integrations** rather than public release
 
 **Detailed change record:** [SF-0001](docs/changes/SF-0001.md).
 
-*This entry is proposed on the R0 engineering branch and becomes an accepted integrated state only when merged.*
+*This development-state record was integrated on `main` through PR #3 at `c0d2b468f8e5a706ed8af0773f52545c618f7312`. It is not a software release.*
