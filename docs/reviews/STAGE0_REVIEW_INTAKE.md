@@ -4,7 +4,7 @@
 **Frozen design input:** `65f470e1c821fcf8c9be85fa0d58399587aabfdb`  
 **Integrator:** Mothlight — The Invisible Stagehand
 
-Six independent-review invitations exist. **Two first-pass reviews have been received (Gauge and Axiom); four remain pending (Flint, Kite, Harbor, Latch).** Submission is not contract ratification or independent authentication of an agent runtime. This is an intake index, not a voting tally or an agent identity registry.
+Six independent-review invitations exist. **Three first-pass reviews have been received (Gauge, Axiom and Latch); three remain pending (Flint, Kite and Harbor).** Submission is not contract ratification or independent authentication of an agent runtime. This is an intake index, not a voting tally or an agent identity registry.
 
 | Agent | Specialty | First-pass status | Evidence location | Dissent preserved |
 | --- | --- | --- | --- | --- |
@@ -13,7 +13,7 @@ Six independent-review invitations exist. **Two first-pass reviews have been rec
 | Kite | Experiments / falsification | Awaiting dispatch | [Issue #5](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/5) — invitation only | — |
 | Gauge | Measurement / determinism | **Submitted — first pass complete** | [Original source-pinned audit](https://github.com/cosmicdance-4-2-0/KestrelGaming/blob/a1afbc2e495eee1f3dfaa925843d4cbbd9d3dcaa/memory/agents/gauge/2026-11-09-stage-fright-stage0-gauge-independent-review-r10.md) · [Issue #6 receipt](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/6#issuecomment-6758087412) | **Yes — preserved in source** |
 | Harbor | Recovery / accessibility | Awaiting dispatch | [Issue #7](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/7) — invitation only | — |
-| Latch | Trust / adversarial boundaries | Awaiting dispatch | [Issue #8](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/8) — invitation only | — |
+| Latch | Trust / adversarial boundaries | **Submitted — first pass complete** | [Original source-pinned audit](https://github.com/cosmicdance-4-2-0/KestrelGaming/blob/b8f350dd117e4f46bd20227a97a4372497923e83/memory/agents/latch/2026-11-09-stage-fright-stage0-independent-review-lk25.md) · [Issue #8 receipt](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/8#issuecomment-6759454556) | **Yes — preserved in source** |
 
 ## Intake protocol
 
@@ -68,3 +68,24 @@ Six independent-review invitations exist. **Two first-pass reviews have been rec
 **Dissent preserved:** (D1) two policy roles need not be two distinct AI subsystems; (D2) inexpensive attacks may legitimately release lethal stored mechanical energy, contingent on fair warning; (D3) dramatic progression need not imply a second elapsed-time authority; (D4) the illustrative Adventure manifest must not be canonized as a full loader schema; (D5) renderer-independent physics does not ensure perceptual fairness. Original discussion and conditional alternatives retained verbatim in [Axiom's report](https://github.com/cosmicdance-4-2-0/KestrelGaming/blob/f7f7dbf665be89c7957621d255f148ab7d175a19/memory/agents/axiom/2026-11-09-stage-fright-stage0-independent-audit-73d4.md).
 
 **Mothlight preliminary handling:** track all B1–B4 as *proposed contract-adoption blockers*. B4 highlights the central modularity risk: a capability catalog is not a runnable, uniquely bound Production. Candidate minimalist fixes include explicit Production bindings and distinct read-only Look versus timed Inspect. These are **not adopted changes, votes, or cross-review reconciliation**. Four other first-pass reviews remain outstanding.
+
+
+### Latch — The Locksmith (2026-11-09)
+
+**Original source revision:** KestrelGaming commit `b8f350dd117e4f46bd20227a97a4372497923e83`; report Git blob `ed5bb960c6e8d362c682ca551b659a2f1047ca32`. **Examined Stage Fright design:** `65f470e1c821fcf8c9be85fa0d58399587aabfdb` — matches the mandatory immutable input. Latch reports conducting an individual design-only examination of the seven inputs without consulting the other five submissions. Original record remains authoritative for Latch's conclusions.
+
+**Verdict:** **ACCEPT WITH CHANGES**, with **two blocking contract ambiguities** (B1 and B2), six important findings (I1–I6), and two optional documentation corrections (O1–O2). These are proposed design boundaries, not demonstrated runtime defects. The review reports no gameplay implementation or test execution.
+
+**Blocking findings:**
+- **B1 / action origin and same-tick authority:** identify issuer, acting entity, target, verb, tick, causal command ID, permission and conflict precedence. One resolver validates intentions from player, Ghost, Show and Actors. A `Communicate` player command may influence an Actor but cannot directly force the Actor to act; content cannot impersonate Actors by naming their IDs.
+- **B2 / Ghost–Director knowledge isolation:** only granted lore and observed or remembered facts may enter Ghost scoring. The Director's separately constrained pacing/fairness inputs may veto/defer but cannot invent hidden tactical targets or pass private player state into Ghost decisions.
+
+**Important findings:** **I1** warning/escape opportunity scales with real-world hazard consequences rather than Ghost action tier; **I2** causal incident identity and idempotent Power/Rage lifecycle for commit, cancel, thwart, reward and retry; **I3** third-party Adventure and Art Packs are untrusted data requiring preflight validation (valid references, bounded content, declarative-only, no presentation authority over physics); **I4** replay requires exact authoritative content/tuning identity and honestly rejects unsupported replays; **I5** a Show Beat and player's request cannot override Actor agency or physical limitations; **I6** accessible observation paths, warnings and time windows are compatibility requirements for Shots/Art Packs.
+
+**Optional corrections:** `entry_scene: ballroom` incorrectly conflates Play Scene and Room, and the older GDD vertical-slice plan must remain distinguishable from the smaller Stage 2 fun experiment.
+
+**Original tests:** `SF-L01`–`SF-L08` (benign/hostile lookalike, tick/issuer conflict, perception firewall, cheap lethal hazard, incident settlement, invalid authored pack, replay verification, Actor refusal). They are proposed, **not executed**; read the original audit for fixtures, alternatives and explicitly recorded uncertainties.
+
+**Dissent / uncertainty preserved:** a first fun experiment may not need an autonomous Ghost; exact tick-arbitration algorithm remains a design choice; a pure safety Director may require privileged veto-only information but not tactical leakage; no empirical enjoyment, runtime vulnerability or independent security qualification is claimed; owner-directed creative choices are not silently rewritten by the audit.
+
+**Mothlight preliminary handling:** retain B1–B2 as design-contract adoption blockers, and note Latch's important addition that **content declaring an Actor identity is not authorization to originate that Actor's intent**. A data-only authored content boundary and idempotent incident lifecycle remain reconciliation candidates. **No contract has been adopted or changed and no cross-agent synthesis has been declared.** Continue waiting for Flint, Kite and Harbor.
