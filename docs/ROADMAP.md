@@ -17,12 +17,14 @@ This repository has TypeScript/npm workspaces, a separate headless package, Pixi
 - [x] Planned boundaries, data ownership and compatibility invariants: [version-zero contracts](contracts/V0_PLANNED_CONTRACTS.md).
 - [x] The player heartbeat, ghost economy and Director policy, cast reactions, outcomes, rehearsed and improvised dialogue: [gameplay specification](design/V0_GAMEPLAY.md).
 - [x] A Stage 1 art decision protocol: [art direction exploration](design/STAGE1_VISUAL_DIRECTION.md).
-- [ ] Review and reconcile these documents with the [original draft GDD](design/STAGE_FRIGHT_DESIGN_v0.1.md).
+- [x] Record reconciliation with the [original draft GDD](design/STAGE_FRIGHT_DESIGN_v0.1.md); its CP0–CP5 sequence and larger first-playable checklist are historical integration proposals, not prerequisites for Stage 2.
 - [x] Publish a source-pinned independent [six-agent review handoff](reviews/STAGE0_SIX_AGENT_HANDOFF.md).
-- [x] Receive and preserve six independently authored first-pass reports; maintain [review intake](reviews/STAGE0_REVIEW_INTAKE.md). **Collection only; reconciliation pending.**
-- [ ] Publish reconciliation with dissent intact before approving gameplay contracts.
-- [ ] Resolve or explicitly defer the blocking open questions; distinguish **proposed**, **adopted** and **experiment** decisions.
+- [x] Receive and preserve six independently authored first-pass reports; maintain [review intake](reviews/STAGE0_REVIEW_INTAKE.md). **Collection complete; original reports and dissent remain preserved.**
+- [x] Record [six-review reconciliation](reviews/STAGE0_RECONCILIATION.md) with source pins, Adopt / Reject / Defer / Experiment dispositions, dissent and focused follow-up questions. Planning adoption does not ratify executable contracts.
+- [ ] Close the reconciliation's remaining gates: exact tick arbitration, observation/timing examples, Ghost projections and settlement, Bell/Beat terminal behavior, replay numerics and concrete bindings. Deferral must name the affected later implementation gate.
 - [ ] Record falsifiable acceptance examples and negative cases for every contract before implementation.
+
+**Stage 0 remains open.** No implementation, art-production or release authority follows from SF-0004.
 
 **Exit evidence:** the owner can describe one small playable Adventure and the interactions/contracts required to run it, without mistaking an illustration for a settled API. No gameplay implementation required. Any numerical tuning remains provisional.
 
@@ -38,7 +40,8 @@ This repository has TypeScript/npm workspaces, a separate headless package, Pixi
 - Choose tentative world scale, character proportions, walk-plane treatment, lighting/occlusion conventions, visible ghost tells and interaction feedback.
 - Select the first Adventure's tentative **Rooms, Shots, Set variations and Play Scenes** as separate design choices (see the art exploration).
 - Define a versioned **Visual Profile / Art Pack** boundary so one Adventure can use different assets and aesthetics than another; no simulation rewrites.
-- Inspect visual mockups at target play sizes; test whether a player can recognize a person, hazard, interactable and cue.
+- Use the judgment fixture's actual evidence requirements to compare the same mechanism/Shot in both styles at target play sizes. Test person, hazard, interactable and Cue recognition, accessible alternatives and atmosphere separately from fixed-command simulation parity. Do not require identical human choices.
+- Treat selection as provisional through Stage 2. If both styles obscure essential evidence, reopen the visual direction; no full asset pipeline or generalized Art Pack loader is required.
 
 **Exit evidence:** reviewed style guide plus a coherent small asset/Shot test demonstrating legibility and atmosphere. **No requirement to deliver a finished episode or full art pipeline.**
 
@@ -46,9 +49,9 @@ This repository has TypeScript/npm workspaces, a separate headless package, Pixi
 
 **Hypothesis:** moving, observing, inspecting and adjusting a mechanism while the clock advances is enjoyable without a reward treadmill.
 
-**Smallest experiment:** a navigable Room, one meaningful mechanism, one legitimate cue and one suspicious deviation. No complex ghost or dialogue AI required.
+**Selected experiment:** [single-mechanism judgment experiment](design/STAGE2_JUDGMENT_EXPERIMENT.md): one navigable Room, one mechanism, one scheduled Cue, two mundane conditions (authorized revision versus ordinary fault) with similar initial symptoms and reachable discriminating evidence. No autonomous Ghost, Director runtime, Power/Rage, binding or generalized dialogue/content system. A passive performer can make the consequence legible.
 
-**Gate:** players can distinguish observation from assumption, intentionally choose to act or refrain, and explain a consequence. If this is dull, change the loop before adding systems.
+**Gate:** players can use evidence to choose action or restraint and understand proportionate consequences; compare trivial strategies using controlled/held-out cases and pilot-calibrated criteria. Distinguish mechanical correctness from human comprehension/enjoyment. If the loop fails, diagnose and revise observation/interaction before expanding systems. One mechanism cannot establish sustained horror, competing-task priorities or whole-game quality; inspecting the only mechanism is not itself failure.
 
 ## Stage 3 — Make a Play actually play
 
@@ -56,15 +59,15 @@ This repository has TypeScript/npm workspaces, a separate headless package, Pixi
 
 **Experiment:** one actor in one role, a short Play with real Scenes/Beats/Cues, one ordinary fault, several context-appropriate line variations, and a possible canceled performance.
 
-**Gate:** the show is legible when normal, late, interrupted or improvised; line selection never gives NPCs knowledge they lacked.
+**Gate:** the show is legible when normal, late, interrupted or improvised; line selection never gives NPCs knowledge they lacked. Impossible Beats resolve through explicit fallback/failure/cancellation, never forced Actor compliance or indefinite waiting. Test dramatic credibility, repetition and authoring effort separately from semantic correctness. Test Fifth Bell request/acknowledgment/cancellation separately from actual evacuation.
 
 ## Stage 4 — Give the House strategic agency
 
 **Hypothesis:** a rule-based Ghost Strategist constrained by an independent Director pacing policy creates fair, escalating tension.
 
-**Experiment:** a bounded legal action catalog, Power/Rage, cost-on-commit, causal attribution, warnings, independent normal faults and replay logs.
+**Experiment:** begin with one costed physical intervention, bounded perception, a simple precommit Director eligibility gate, causal settlement and a matched mundane/no-Ghost control. Expand the action catalog only for distinct decision value. Power/regeneration/Rage remain game direction; explicitly label any reduced fixture that postpones Rage rather than silently deleting it. Prices, rates and five-tier breadth remain provisional.
 
-**Gate:** foiling an attack always counts; the ghost cannot invent resources, know hidden plans or compensate automatically for a clever player.
+**Gate:** foiling an attack always counts; the Ghost cannot invent resources, know hidden plans or compensate automatically for a clever player. Prove unique outcome claims, partial-result accounting, exact replay identity and consequence-based reachable counterplay. A cheap action may cause severe ordinary physical harm; price is not a fairness classification.
 
 ## Stage 5 — Make survival and relationships matter
 
@@ -88,7 +91,7 @@ This repository has TypeScript/npm workspaces, a separate headless package, Pixi
 
 **Experiment:** assemble a **second** valid Adventure from compatible Play, Venue, Cast, Haunting, dialogue and art modules; deliberately exercise one alternate Visual Profile.
 
-**Gate:** incompatible modules fail loudly before play; neither Play scripts nor art packs own simulation logic. Same simulation, different experience.
+**Gate:** concrete Role/Actor, Cue/mechanism, staging/Room, Ghost-reach and semantic-signal bindings work without core rewrites. Incompatible and ambiguous compositions fail before play. Third-party data/assets cross a validated bounded loading boundary. Art parity and human perceptual usability are separate gates; universal permutations and a content editor are not required.
 
 ## Stage 8 — Evidence-driven revision
 
@@ -105,3 +108,11 @@ Online cooperation, authoritative servers, richer physical destruction, mobile p
 ## Process for changing the roadmap
 
 For any gate: record the hypothesis, smallest test, observed evidence, retained decisions, rejected alternatives, unresolved questions and regression risk. No stage automatically ratifies the next. Preserve working prototypes, avoid unasked-for rewrites, and document compatibility consequences of interface changes.
+
+## Cross-cutting gates and later integration
+
+Pause/suspension freezes single-player simulation without wall-clock catch-up; already acquired notes cannot reveal new observations while paused. Replay identity, safe completed-tick checkpoints and non-destructive incompatibility handling are separate responsibilities. Full persistence remains deferred; a restart-only toy must disclose its limitation. Before save support, verify pending effects and failed writes against uninterrupted runs.
+
+The larger **Last Waltz integrated Adventure** follows the relevant successful experiments; it is not the first judgment test. Its duration, mechanism/Beat counts and binding inclusion remain revisable. Stage 5–6 stakes and binding, sophisticated Director behavior, continuous psyche tuning, large dialogue catalogs, generalized loaders/editors and additional packages are deferred to demonstrated need. No deletion of protected game direction is implied.
+
+For the next review, ask the original authors whether concrete revised rules resolve their counterexamples. Preserve their first passes and any remaining objection. These follow-ups have not yet been dispatched or approved.

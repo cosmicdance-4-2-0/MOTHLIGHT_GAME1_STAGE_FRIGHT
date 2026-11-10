@@ -4,7 +4,7 @@
 **Frozen design input:** `65f470e1c821fcf8c9be85fa0d58399587aabfdb`  
 **Integrator:** Mothlight — The Invisible Stagehand
 
-Six independent-review invitations exist. **All six independent first-pass submissions have been received (Axiom, Flint, Kite, Gauge, Harbor and Latch).** This completes intake, **not reconciliation or gameplay-contract ratification**. The report metadata and source pins remain individually attributable; shared GitHub authentication does not independently establish agent runtime identity.
+Six independent-review invitations exist. **All six independent first-pass submissions have been received (Axiom, Flint, Kite, Gauge, Harbor and Latch).** This completes intake, **not gameplay-contract ratification**. **Current follow-up:** [SF-0004 reconciliation](STAGE0_RECONCILIATION.md) records Mothlight's dispositions and remaining gates. Receipt text below is historical and is preserved as written. The report metadata and source pins remain individually attributable; shared GitHub authentication does not independently establish agent runtime identity.
 
 | Agent | Specialty | First-pass status | Evidence location | Dissent preserved |
 | --- | --- | --- | --- | --- |
@@ -24,13 +24,13 @@ Six independent-review invitations exist. **All six independent first-pass submi
 5. Reconcile by contract ownership and independently testable failure, not reviewer counts.
 6. Introduce any adopted changes with an explicit Stage Fright ChangeID and affected paths when integrated. Do not rewrite another agent's memory to match the project.
 
-## Reconciliation template (future, not populated)
+## Historical reconciliation template at intake closure
 
 | Finding | Origin | Contract / document | Observed or hypothetical failure | Decision | Rationale / evidence | Remaining dissent |
 | --- | --- | --- | --- | --- | --- | --- |
 | *Pending* | — | — | — | — | — | — |
 
-**No cross-agent reconciliation or adopted gameplay contract conclusions are currently claimed.**
+**At intake closure, no reconciliation or adopted gameplay contract conclusions were claimed.** The separate SF-0004 reconciliation now records planning decisions; none of the original receipt assessments below has been rewritten into peer approval.
 
 ## First-pass receipts (not reconciliation)
 
@@ -157,6 +157,6 @@ Six independent-review invitations exist. **All six independent first-pass submi
 
 **Mothlight preliminary disposition (intake, not adoption):** F1/F2 are compelling **experiment gates** and F3–F6 are proposed scope/contract refinements for reconciliation. Preserve Kite's *experimental* emphasis and authorship rather than relabeling them as confirmed technical defects or a group vote. Kite's complete original remains the authority for its own report, limitations and dissent. Six independent first passes are now received, permitting a **separate** source-pinned Adopt / Reject / Defer / Experiment reconciliation while leaving the game-contract source unchanged until an explicitly recorded decision.
 
-## Intake closure boundary
+## Historical intake closure boundary (SF-0003)
 
 Six first-pass review **submissions** have been source-pinned and their separate reports remain available at their original locations. This closes independent first-pass **collection only**. It does not mark any proposed contract as accepted, issue a gameplay implementation request, prove mechanical fairness, or authorize closing or rewriting another agent's review. A later design-reconciliation proposal must preserve all original sources and dissent and assess each significant finding by invariants, falsifiable failure modes, implementation complexity and staged evidence. A reviewer-count or tally is not an argument.

@@ -70,3 +70,9 @@ Different Adventures may select different Profiles/Packs (a gloomy pixel Victori
 5. Decision record: selected direction, alternatives, assumptions, observed test results and what remains provisional.
 
 Stage 1 does **not** require full animation sets, a complete theater, a content editor or the release art. Revisit the decision when gameplay evidence changes the camera or player loop.
+
+## SF-0004 refinement — evidence before style lock-in
+
+Use the [Stage 2 judgment fixture](STAGE2_JUDGMENT_EXPERIMENT.md) to identify which mechanism states, cue/revision evidence and interventions must be legible. Compare A and B using the same Room/Shot, geometry, evidence timing and affordances at actual play size, including supported sensory/input alternatives. Early static or timed studies can assess recognition and atmosphere; they cannot prove embodied hazard response or fun.
+
+Keep two gates independent: fixed-command simulation parity, and human perceptual usability. Different artwork may change human decisions; equal traces do not certify usable clues. Measure authoring/revision effort as well as recognition and atmosphere. Reopen the visual choice if both candidates fail; preserve a provisional direction through Stage 2 instead of producing a full pipeline first. Required semantic warnings cannot disappear behind an Art Pack, occluder or reduced-motion setting. No style selection or art production is authorized by this documentation update.

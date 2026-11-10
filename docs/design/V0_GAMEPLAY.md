@@ -1,6 +1,6 @@
 # Stage Fright — Planned Gameplay, Version 0
 
-**Status:** a falsifiable *game design*, not code or a claim of playtested fun.
+**Status:** reconciled planning direction, SF-0004; a falsifiable game design, not code or a claim of playtested fun. See [reconciliation](../reviews/STAGE0_RECONCILIATION.md) for exact dispositions and unresolved gates.
 
 ## The game promise
 
@@ -51,11 +51,13 @@ One scripted Play Scene should allow at least these **authorable** reactions:
 
 No LLM dialogue. Select stable authored line variants by visible context, local knowledge, priority and deterministic tie-break. Backstage speech should contrast with in-character performance; silence is an authored outcome.
 
-## The two truths every run must preserve
+## Intended events, actual events, and accessible evidence
 
 **Rehearsal truth:** What the Play and Production intended to happen; ordinary faults and approved revisions are possible.
 
 **World truth:** What actually happened and why; the Ghost may have interfered or may have done nothing. The player sees partial evidence, while debugging/replay can inspect the whole causal chain.
+
+**Accessible evidence:** what the stagehand, Actor or Ghost could observe by a given tick, through permitted access and senses. This is a projection of facts, not a third authority over world truth. Operational danger may justify intervention before its cause is known; later causal investigation supports learning the House and binding it.
 
 A normal lighting effect must sometimes resemble sabotage. A false intervention must be capable of harming the show. Otherwise the mystery collapses into a red-highlighted repair checklist.
 
@@ -68,9 +70,11 @@ Keep independent dimensions rather than flattening all results into a single sco
 - **Haunting:** active, exhausted, bound, expelled, or destroyed (where authored).
 - **Player:** alive, escaped, injured, or dead.
 
-The **Fifth Bell** is a deliberate evacuation/cancellation option. It may lose the performance while saving lives. The Ghost's destruction is never a mandatory win condition for every Adventure.
+The **Fifth Bell** is a deliberate evacuation/cancellation option. Request, acceptance/rejection, Show cancellation and completed physical evacuation are distinct. A valid late Bell cannot undo resolved injury or teleport anyone to safety. It may lose the performance while saving lives; exact command priority and terminal transitions remain design gates. The Ghost's destruction is never a mandatory win condition for every Adventure.
 
-## The smallest conceptual demonstration — The Last Waltz
+## Later integrated Adventure candidate — The Last Waltz
+
+The earliest gameplay experiment is the [single-mechanism mundane judgment pair](STAGE2_JUDGMENT_EXPERIMENT.md), without autonomous Ghost behavior. The larger candidate below follows the relevant staged experiments; it is not a prerequisite for that test.
 
 The initial candidate Play is one Act with a few dramatic Scenes. Its Venue offers a compact group of Rooms; its Stage has a chandelier restraint, curtain mechanism and light cue. Mara, one Actor assigned to a dancer Role, has a rehearsed line plus contingency dialogue. A bounded Ghost can move a control or threaten a physical chain reaction; at least one suspicious event is genuinely harmless or mundane.
 
@@ -90,3 +94,15 @@ The initial candidate Play is one Act with a few dramatic Scenes. Its Venue offe
 - A different Art Pack changes the visible Room/Shot but not the causal event trace.
 
 **No balance constants, controls, dialogue texts, Play scene counts or acceptance metrics have been ratified yet.**
+
+## Reconciled interaction and opposition rules
+
+- Reads of already acquired information are distinct from spatial, timed Inspect commands. Inspection may update observations while the world advances, but cannot disclose a hidden cause by fiat or silently alter integrity.
+- Single-player explicit pause, options/accessibility menus and suspension freeze all simulation; resume does not catch up wall time. New world evidence cannot arrive through paused UI reads. Exact cue-book interaction remains a prototype question.
+- The initial Director gates candidate eligibility before paid commitment. It may withhold pressure for declared pacing/safety reasons, not retarget using private information or rewrite a committed incident. Later legitimate attacks pay independently.
+- Ghost affordability, debit, world effects and unique outcome claims must reconcile. Partial success and binding races require explicit tables before implementation; provisional numeric tuning is not adopted.
+- Fairness follows consequence and reachable information/action opportunities, including earlier informed choices. Cheap supernatural interference may release lethal ordinary energy. No guaranteed survival or artificial damage cap is implied.
+- Restraint should preserve a visible worthwhile Beat. False intervention has a proportionate physical/dramatic cost. Deliberate caution may sacrifice the show without becoming an arbitrary moral failure.
+- Actor refusal/incapacity must lead to an authored finite Beat result, fallback or cancellation. Dialogue correctness, dramatic quality and authoring cost receive separate tests. Silence is valid.
+
+These planning requirements are selected; no interaction durations, final schema, full phase table, balance, art style or empirical acceptance thresholds are ratified.

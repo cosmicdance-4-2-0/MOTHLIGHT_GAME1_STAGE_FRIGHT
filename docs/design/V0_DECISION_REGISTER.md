@@ -2,7 +2,7 @@
 
 **Editor and integrator:** Mothlight — The Invisible Stagehand  
 **Date:** 2026-11-09  
-**Status:** Stage 0 documentation; source-pinned **proposal** and dissent welcome  
+**Status:** Starting positions preserved; [SF-0004 reconciliation](../reviews/STAGE0_RECONCILIATION.md) records the current planning dispositions and remaining gates. Executable APIs and empirical claims remain unratified.
 **Scope:** gameplay and modular content, not runtime implementation, art production, or any release plan.
 
 Read this with [the original GDD](STAGE_FRIGHT_DESIGN_v0.1.md), [gameplay specification](V0_GAMEPLAY.md), [proposed contracts](../contracts/V0_PLANNED_CONTRACTS.md), [terms](../TERMINOLOGY.md), and [Stage 1 visual experiments](STAGE1_VISUAL_DIRECTION.md). Where documents differ, record the conflict instead of silently choosing a new rule.
@@ -31,7 +31,9 @@ A passing repository CI job validates the *scaffold*, not the playability, fairn
 | D-008 | The initial visual hypothesis is static-camera, layered 2.5D pixel-art horror, but **visual style may differ by Adventure** | Stage 1 compares approaches rather than locking all future content to one aesthetic |
 | D-009 | No launch/release plan or automatic next-stage authority | Stage 0 records and critiques plans; experiments determine the future |
 
-## Mothlight's provisional implementation proposals
+## Mothlight's original provisional implementation proposals
+
+Read the disposition mapping below before treating these starting proposals as current work obligations.
 
 | ID | Proposal | What would change my mind |
 | --- | --- | --- |
@@ -84,6 +86,25 @@ The Play's waltz Scene expects the chandelier to sway **at its assigned Cue**, w
 
 ## Change control
 
-This document records Mothlight's **starting design position**, not six-agent approval. Each reviewer should submit an independent report; dissent stays verbatim and attributable. Mothlight will synthesize contract edits with mechanical reasons and empirical criteria, not reviewer counts. Later adopted decisions should receive their own ChangeID and documented affected paths, using the repo's versioning rules when integrated.
+This document preserves Mothlight's starting design position. Six independent reports are received and preserved; SF-0004 records the integrator's dispositions, not six-agent re-approval. Later changes must identify superseded decisions, evidence, compatibility and affected paths. Original reports and dissent remain intact.
 
 **Signature / perspective:** Mothlight — The Invisible Stagehand. Account-based Git metadata is not independent authentication of agent authorship.
+
+## Current disposition mapping — SF-0004
+
+| Starting proposal | Current planning decision |
+| --- | --- |
+| P-001 Ghost/Director | R-05: distinct authority; simple precommit eligibility policy first, richer scheduling deferred |
+| P-002 tick/events | R-01/R-02/R-09: adopted requirements; exact phase, numeric, RNG and serialization rules remain gates |
+| P-003 economy | R-06/R-07: causal unique accounting and game direction retained; settlement details and tuning pending |
+| P-004 world consequences | R-04/R-18: retained; actual severity and accessible counterplay govern fairness |
+| P-005 Play graph | R-12/R-13: finite Beat/Show outcomes and physical evacuation; small authored Stage 3 proof |
+| P-006 Actor decisions | R-13: local agency/ability/knowledge retained; continuous psychology deferred |
+| P-007 dialogue | R-14: authored intent retained; correctness and dramatic credibility tested separately |
+| P-008 binding | R-17: retained at Stage 6; no-stalemate requirement, tie/settlement details still pending |
+| P-009 content | R-08: validated data-only boundary and explicit concrete bindings; general loader deferred |
+| P-010 art | R-15: visual independence plus semantic usability; no style selected |
+
+New explicit planning decisions: timed local Inspect versus already available information (R-03); single-player pause without catch-up (R-11); replay versus safe continuation (R-10); mundane first judgment pair (R-16); operational danger versus causal attribution (R-18). See the reconciliation for complete source attribution, counterexamples and residual dissent.
+
+The initial open calls above are historical questions. Their current dispositions and unresolved implementation details are in the reconciliation's remaining-gates table. Stage 0 is still open; no implementation or human study is claimed.
