@@ -15,16 +15,18 @@ Stage Fright is a planned modular, replayable, single-player-first theatrical su
 
 **Repository setup only.** No ghost AI, cast behavior, damage simulation, episode system, or playable game loop has been implemented.
 
-See [architecture](docs/ARCHITECTURE.md), [roadmap](docs/ROADMAP.md), and the [draft game design](docs/design/STAGE_FRIGHT_DESIGN_v0.1.md) when the scaffold is populated.
+See [architecture](docs/ARCHITECTURE.md), [roadmap](docs/ROADMAP.md), [the draft game design](docs/design/STAGE_FRIGHT_DESIGN_v0.1.md), [versioning](docs/VERSIONING.md) and [changelog](CHANGELOG.md).
 
 ## Development
 
 Once dependencies are installed:
 
 ```sh
-npm install
+npm ci
 npm run dev
 npm run check
+npx playwright install chromium
+npm run smoke
 ```
 
 For now, `npm run dev` is intended to display only a rendering smoke screen.

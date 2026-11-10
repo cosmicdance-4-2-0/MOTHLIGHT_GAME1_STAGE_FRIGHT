@@ -1,8 +1,11 @@
-name: setup checks
+name: Stage Fright R0 checks
 
 on:
   push:
   pull_request:
+
+permissions:
+  contents: read
 
 jobs:
   check:
@@ -12,6 +15,30 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
-      # A verified dependency lockfile is a remaining setup gate.
-      - run: npm install --no-audit --no-fund
-      - run: npm run check
+          cache: npm
+      - name: Install exact dependency resolution
+        run: npm ci --no-audit --no-fund
+      - name: Typecheck, unit test, build and verify version record
+        run: npm run check
+
+  browser-smoke:
+    needs: check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Install headless Chromium and system dependencies
+        run: npx playwright install --with-deps --only-shell chromium
+      - name: Verify PixiJS pixels in Chromium
+        run: npm run smoke
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: r0-browser-smoke-failure
+          path: test-results/
+          retention-days: 7
+          if-no-files-found: ignore
