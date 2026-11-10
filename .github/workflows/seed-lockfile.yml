@@ -1,0 +1,29 @@
+name: Temporary lockfile generation (R0)
+
+on:
+  push:
+    branches:
+      - chore/r0-dev-readiness
+
+permissions:
+  contents: read
+
+jobs:
+  lockfile-artifact:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - name: Produce dependency lockfile
+        run: npm install --package-lock-only --ignore-scripts --no-audit --no-fund
+      - name: Check file was produced
+        run: test -s package-lock.json && node -e "const p=require('./package-lock.json'); if(!p.packages || !p.lockfileVersion) process.exit(1)"
+      - name: Preserve generated lockfile for Mothlight review
+        uses: actions/upload-artifact@v4
+        with:
+          name: stage-fright-package-lock-r0
+          path: package-lock.json
+          retention-days: 2
+          if-no-files-found: error
