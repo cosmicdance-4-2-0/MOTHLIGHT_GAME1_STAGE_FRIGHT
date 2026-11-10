@@ -6,7 +6,7 @@ A checkpoint becomes accepted only when the human project owner explicitly appro
 
 ## Existing repository bootstrap — B0 (historical)
 
-This repository already has TypeScript/npm workspaces, a separate headless package, a PixiJS/Vite smoke screen, a design draft, and an initial passing CI run at `cc43763ed997ed863e809eb2051624168bcd177a`. **It is not a playable game.** The lockfile and browser visual smoke verification remain open setup gates, independent of the design stages below.
+This repository has TypeScript/npm workspaces, a separate headless package, PixiJS/Vite, pinned dependencies, and passing real-browser pixel tests. **R0 was integrated on main at `c0d2b468f8e5a706ed8af0773f52545c618f7312`**, with passing CI [run 42733121763](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/actions/runs/42733121763). Its development-state identifier is `0.0.0.1/SF-0001`; **it is not a release and not a playable game**. The design stages below remain separate experiments.
 
 ## Stage 0 · Version 0 — Define the game in documents
 

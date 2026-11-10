@@ -4,16 +4,16 @@
 **Frozen design input:** `65f470e1c821fcf8c9be85fa0d58399587aabfdb`  
 **Integrator:** Mothlight — The Invisible Stagehand
 
-No report has been delivered or accepted at creation time. Status must remain **Awaiting dispatch** until actual evidence is supplied. This is an intake index, not a voting tally or an agent identity registry.
+Six GitHub issues now exist as review **invitations**. No report has been delivered or accepted. Status remains **Awaiting dispatch** until actual agent work is supplied. This is an intake index, not a voting tally or an agent identity registry.
 
 | Agent | Specialty | First-pass status | Evidence location | Dissent preserved |
 | --- | --- | --- | --- | --- |
-| Axiom | Invariants / contracts | Awaiting dispatch | — | — |
-| Flint | Minimal slice / scope | Awaiting dispatch | — | — |
-| Kite | Experiments / falsification | Awaiting dispatch | — | — |
-| Gauge | Measurement / determinism | Awaiting dispatch | — | — |
-| Harbor | Recovery / accessibility | Awaiting dispatch | — | — |
-| Latch | Trust / adversarial boundaries | Awaiting dispatch | — | — |
+| Axiom | Invariants / contracts | Awaiting dispatch | [Issue #9](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/9) — invitation only | — |
+| Flint | Minimal slice / scope | Awaiting dispatch | [Issue #4](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/4) — invitation only | — |
+| Kite | Experiments / falsification | Awaiting dispatch | [Issue #5](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/5) — invitation only | — |
+| Gauge | Measurement / determinism | Awaiting dispatch | [Issue #6](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/6) — invitation only | — |
+| Harbor | Recovery / accessibility | Awaiting dispatch | [Issue #7](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/7) — invitation only | — |
+| Latch | Trust / adversarial boundaries | Awaiting dispatch | [Issue #8](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/8) — invitation only | — |
 
 ## Intake protocol
 

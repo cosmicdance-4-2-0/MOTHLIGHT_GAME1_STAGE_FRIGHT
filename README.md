@@ -13,18 +13,20 @@ Stage Fright is a planned modular, replayable, single-player-first theatrical su
 
 ## Status
 
-**Repository setup only.** No ghost AI, cast behavior, damage simulation, episode system, or playable game loop has been implemented.
+**R0 development environment verified. Stage 0 gameplay/design remains proposed.** No ghost AI, cast behavior, damage simulation, episode system, or playable game loop has been implemented.
 
-See the [staged experimental roadmap](docs/ROADMAP.md), [working terminology](docs/TERMINOLOGY.md), [Version 0 proposed contracts](docs/contracts/V0_PLANNED_CONTRACTS.md), [Version 0 gameplay specification](docs/design/V0_GAMEPLAY.md), [Stage 1 visual exploration](docs/design/STAGE1_VISUAL_DIRECTION.md), [architecture](docs/ARCHITECTURE.md), and the [original draft game design](docs/design/STAGE_FRIGHT_DESIGN_v0.1.md).
+See the [experimental development roadmap](docs/ROADMAP.md), [working terminology](docs/TERMINOLOGY.md), [Version 0 planned contracts](docs/contracts/V0_PLANNED_CONTRACTS.md), [gameplay specification](docs/design/V0_GAMEPLAY.md), [decision and experiment register](docs/design/V0_DECISION_REGISTER.md), [Stage 1 visual exploration](docs/design/STAGE1_VISUAL_DIRECTION.md), [initial GDD](docs/design/STAGE_FRIGHT_DESIGN_v0.1.md), [architecture](docs/ARCHITECTURE.md), [versioning](docs/VERSIONING.md) and [human changelog](CHANGELOG.md).
 
 ## Development
 
 Once dependencies are installed:
 
 ```sh
-npm install
+npm ci
 npm run dev
 npm run check
+npx playwright install chromium
+npm run smoke
 ```
 
 For now, `npm run dev` is intended to display only a rendering smoke screen.
@@ -35,10 +37,10 @@ For now, `npm run dev` is intended to display only a rendering smoke screen.
 - Game rules must remain testable headlessly; visual physics must not silently decide authoritative damage.
 - Content should compose through explicit validated interfaces rather than hidden global state.
 - Designs and balancing values are proposals until tested and accepted.
-- Do not implement game systems during repository bootstrap.
+- Do not implement gameplay systems until the relevant Stage 0 design contracts are reviewed and authorized.
 
 The project is in early design. Licensing and redistribution terms have not yet been selected.
 
-## Independent design review
+## Independent Stage 0 reviews
 
-Mothlight is Stage Fright's integrating designer. The other six Kestrel engineers are invited to submit **independent Stage 0 design reviews**, not to rubber-stamp the draft. See the [six-agent source-pinned handoff](docs/reviews/STAGE0_SIX_AGENT_HANDOFF.md), [review intake](docs/reviews/STAGE0_REVIEW_INTAKE.md), and [design decision register](docs/design/V0_DECISION_REGISTER.md). No reviews are recorded yet; content and gameplay contracts are still proposed.
+Mothlight is the integrating game designer. Axiom, Flint, Kite, Gauge, Harbor, and Latch each have a separately tracked **independent review invitation**. All six must use the same [source-pinned brief](docs/reviews/STAGE0_SIX_AGENT_HANDOFF.md), with submissions and disagreements preserved in the [intake ledger](docs/reviews/STAGE0_REVIEW_INTAKE.md). Issued invitations are **not** recorded as approvals or completed reviews.

@@ -16,9 +16,12 @@
     "build": "npm run build --workspace @stage-fright/core && npm run build --workspace @stage-fright/web",
     "typecheck": "npm run build --workspace @stage-fright/core && npm run typecheck --workspace @stage-fright/web",
     "test": "npm run build --workspace @stage-fright/core && npm run test --workspace @stage-fright/core",
-    "check": "npm run typecheck && npm run test && npm run build"
+    "check": "npm run typecheck && npm run test && npm run build && npm run version:check",
+    "smoke": "playwright test",
+    "version:check": "node tools/validate-version.mjs"
   },
   "devDependencies": {
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "@playwright/test": "1.65.0"
   }
 }
