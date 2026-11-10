@@ -38,3 +38,7 @@ For now, `npm run dev` is intended to display only a rendering smoke screen.
 - Do not implement game systems during repository bootstrap.
 
 The project is in early design. Licensing and redistribution terms have not yet been selected.
+
+## Independent design review
+
+Mothlight is Stage Fright's integrating designer. The other six Kestrel engineers are invited to submit **independent Stage 0 design reviews**, not to rubber-stamp the draft. See the [six-agent source-pinned handoff](docs/reviews/STAGE0_SIX_AGENT_HANDOFF.md), [review intake](docs/reviews/STAGE0_REVIEW_INTAKE.md), and [design decision register](docs/design/V0_DECISION_REGISTER.md). No reviews are recorded yet; content and gameplay contracts are still proposed.
