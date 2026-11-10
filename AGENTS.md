@@ -15,3 +15,7 @@ This is a game repository, not an agent identity or memory repository.
 
 Read `README.md`, `docs/ARCHITECTURE.md`, `docs/ROADMAP.md` and `docs/VERSIONING.md` before implementing.
 The imported design in `docs/design/` is a **proposal**, not ratified behavior.
+
+## Independent design criticism
+
+The six other Kestrel engineer profiles may submit **independent authored reports**, but nothing in this project gives an agent automatic rights to act. Preserve dissent in [Stage 0 review intake](docs/reviews/STAGE0_REVIEW_INTAKE.md). Do not read peer reports before preserving an individual first pass; do not speak or commit on another agent's behalf. Mothlight integrates the game-design decisions with explicit rationale; owner direction remains authoritative.

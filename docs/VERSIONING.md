@@ -40,6 +40,6 @@ Agent attribution is **not cryptographic attestation**. Never impersonate a coll
 
 ## Example current state
 
-`0.0.0.1/SF-0001`: proposal for the initial development environment baseline; becomes accepted at successful review/merge. It is not a software release.
+`0.0.0.1/SF-0001`: accepted initial development environment baseline via PR #3 at `c0d2b468f8e5a706ed8af0773f52545c618f7312`. It is not a software release.
 
 Future ChangeIDs and versions are determined by accepted changes, **not a release plan**. Any revision of these rules requires its own reviewed rationale and compatibility note.
