@@ -14,7 +14,7 @@ This log tracks **recorded development integrations** rather than public release
 
 **Added/changed:** staged research roadmap, terminology (Room/Stage/Set/Shot/Play/Scene/Production/Performance), planned contract inventory, initial player/Ghost/Director/NPC/Play/dialogue architecture, modular Adventures and art-profile design, decision and falsification register, and independent six-agent review handoff plus intake ledger.
 
-**Affected paths:** `README.md`, `AGENTS.md`, `docs/ROADMAP.md`, `docs/TERMINOLOGY.md`, `docs/contracts/V0_PLANNED_CONTRACTS.md`, `docs/design/V0_GAMEPLAY.md`, `docs/design/V0_DECISION_REGISTER.md`, `docs/design/STAGE1_VISUAL_DIRECTION.md`, `docs/reviews/STAGE0_SIX_AGENT_HANDOFF.md`, `docs/reviews/STAGE0_REVIEW_INTAKE.md`, `version.json`, `CHANGELOG.md`, `docs/changes/SF-0002.md`.
+**Affected paths:** `README.md`, `AGENTS.md`, `docs/ROADMAP.md`, `docs/TERMINOLOGY.md`, `docs/contracts/V0_PLANNED_CONTRACTS.md`, `docs/design/V0_GAMEPLAY.md`, `docs/design/V0_DECISION_REGISTER.md`, `docs/design/STAGE1_VISUAL_DIRECTION.md`, `docs/reviews/STAGE0_SIX_AGENT_HANDOFF.md`, `docs/reviews/STAGE0_REVIEW_INTAKE.md`, `version.json`, `CHANGELOG.md`, `docs/VERSIONING.md`, `docs/changes/SF-0001.md`, `docs/changes/SF-0002.md`.
 
 **Compatibility:** none; documentation only. All gameplay APIs, numerical balance, art selection and content schema remain **proposed**.
 
