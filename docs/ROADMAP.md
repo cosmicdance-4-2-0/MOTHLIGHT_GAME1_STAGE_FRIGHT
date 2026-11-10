@@ -10,11 +10,11 @@ Future checkpoints are proposed, not pre-authorized implementation.
 - [x] Include a non-gameplay rendering smoke screen
 - [x] Import the existing draft design and architecture documentation
 - [x] Add a smoke test and CI check definition
-- [ ] Generate and verify a committed lockfile (registry access needed)
+- [x] Generate a committed lockfile matching a runner artifact (Git blob `420b864851ac24178bceac4cd45e78c16aee2b00`)
 - [x] Run dependency-backed build, typecheck and tests (CI success at `cc43763ed997ed863e809eb2051624168bcd177a`)
-- [ ] Verify the browser smoke screen actually renders
+- [ ] Verify actual browser-rendered pixels using Chromium (**CI pending**)
 
-R0 remains **provisional** until the lockfile and browser-verification gates pass.
+R0 remains **provisional** pending a successful `npm ci` CI run and Chromium visual verification. See `docs/changes/SF-0001.md`.
 
 ## R1 — Headless simulation (future)
 
