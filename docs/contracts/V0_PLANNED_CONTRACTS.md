@@ -1,6 +1,6 @@
 # Stage Fright — Planned Contracts, Version 0
 
-**Status: DRAFT / DESIGN ONLY.** These are contract *intentions*, not implemented TypeScript APIs, verified runtime invariants, or accepted schemas. Stage 0 is documentation and falsifiable examples; there is no code change authorized by this document.
+**Status: DESIGN ONLY; reconciled planning requirements in SF-0004.** These are contract intentions, not implemented TypeScript APIs, verified runtime invariants, or accepted executable schemas. The [reconciliation](../reviews/STAGE0_RECONCILIATION.md) controls the addressed decisions and identifies remaining adoption gates. Stage 0 is documentation and falsifiable examples; there is no code change authorized by this document.
 
 ## Authority and dependency direction
 
@@ -24,17 +24,17 @@ The fixed-step world resolver decides legal actions and consequences. Neither re
 | ID | Owner | Planned inputs / outputs | Invariants / explicit tests |
 | --- | --- | --- | --- |
 | **C00 RunClock** | Core | Fixed tick, current authoritative state, deterministic step result | Rendering cadence cannot advance or skip simulation ticks. |
-| **C01 Command/Event** | Core | Ordered actor-identified commands; validated actions; causal events with IDs/ticks/reasons | Unsupported, stale and conflicting commands have defined resolution, never silent success. |
+| **C01 Command/Event** | Core | Ordered issuer-validated, actor-identified commands; validated actions; causal events with IDs/ticks/reasons | Unsupported, stale and conflicting commands have defined resolution, never silent success. |
 | **C02 World Entity** | World | Stable entities, Room/Level positions, affordances, operating state, integrity, hazard transitions | Operating state ≠ integrity; a valid mechanism change creates world effects before any NPC/ghost reward. |
-| **C03 Player Verbs** | Player interface | Move, Inspect, Operate/Adjust, Communicate, Use/Place | Same underlying verb applies across props; observing does not directly mutate authoritative state. |
+| **C03 Player Verbs** | Player interface | Move, Inspect, Operate/Adjust, Communicate, Use/Place | Same underlying verb applies across props; read-only lookups differ from timed local Inspect, which can update permitted observations while the world advances. |
 | **C04 Ghost Strategist** | Ghost | Perceived facts, eligible actions, Power/Rage, goal weights, memory | Power is spent on commitment, no negative Power, no invented senses, causal once-per-incident rewards. |
-| **C05 Director Policy** | Pacing | Observable intensity state, eligibility window, recovery constraints | Can schedule/withhold eligible actions only; cannot fabricate threats or negate thwarted plans. |
+| **C05 Director Policy** | Pacing | Observable intensity state, eligibility window, recovery constraints | Initially gates eligibility before commitment; cannot fabricate, retarget or reschedule committed incidents to negate counterplay. |
 | **C06 NPC Actor/Role** | Cast | Actor traits/Health/Fear/Trust/knowledge; Play Role obligations; local observations | NPCs cannot know unobserved ghost actions or speak while incapacitated; refusal need not imply panic. |
 | **C07 Play/Show** | Dramaturgy | Acts, Scenes, Beats, Cues, rehearsal baseline, contingencies and outcome gates | Legitimate late/mistaken cues exist; performance can continue via authored fallback or fail explicitly. |
 | **C08 Dialogue** | Dialogue | Authored lines by intent, prerequisites, actor knowledge, urgency, cooldown | Stable variant IDs, deterministic choice, interruption, silence/fallback; no LLM. |
 | **C09 Adventure Composition** | Content | Manifest pins, Play/Venue/Cast/Haunting/Production/Art Pack/rules, capability map | Reject absent required capability; no hidden import of executable third-party game logic. |
 | **C10 Presentation** | PixiJS adapter | Observed snapshots/events, Room/Shot and Art Pack assets, input-to-command mapping | Camera change is not a world action; renderer cannot make damage or change the clock. |
-| **C11 Replay/Save** | Core & storage adapter | Seed/PRNG state, version pins, ordered command trace, state/event hashes | Same supported runtime inputs yield matching authoritative replay; unsupported versions fail clearly. |
+| **C11 Replay / Continuation** | Core & storage adapter | Seed/PRNG state, version pins, ordered command trace, state/event hashes | Exact supported inputs reproduce authoritative replay; continuation additionally requires a valid completed-tick checkpoint and non-destructive incompatibility handling. |
 | **C12 Future multiplayer** | Later authority adapter | Commands identified by acting entity and tick, validated ownership/permissions | No implicit global singleton player; multiplayer not implemented in Version 0. |
 
 ## C00–C02: simulation and physical consequences
@@ -80,3 +80,21 @@ A `RunRecord` should pin the Adventure, content schema revisions, tuning/hash, i
 Each contract receives a later status: **Proposed / Experiment / Adopted / Superseded**, with rationale, tests and a source revision. Any adopted change to an interface requires compatibility analysis. Unknowns intentionally left open include numeric Power/Rage balance, replay storage format, numeric physics model, local navigation representation, dialogue localization schema, asset-pack dependency syntax, and multiplayer transport.
 
 **Stage 0 completion is not implementation approval.** Acceptance requires reviewing each contract's responsibility, invariants, negative cases and intended collaboration with the others.
+
+## SF-0004 contract refinements and open implementation gates
+
+| Contracts | Selected planning requirement | Required before affected implementation |
+| --- | --- | --- |
+| C00/C01 | One tick authority; Show progression derives from it. One resolver validates issuer, actor, target, range, ability, intended tick and causal identity. Content identifiers confer no command authority. | Full phase/conflict table including same-tick Cue/player/Ghost actions, duplicates, invalid inputs, affordability/regen, Bell/harm and binding ties. Reconciliation's dependency table is not a complete algorithm. |
+| C03/C10 | Already available information may be read; physical Inspect consumes explicit local opportunity and reveals accessible evidence only. Operational danger and ultimate causal attribution are different questions. | Concrete observation windows and action costs; paused UI cannot acquire new evidence. Define cue-book interaction and supported modalities. |
+| C00/C03 | Explicit single-player pause, options/accessibility and suspension freeze simulation; no wall-clock catch-up. | Boundary behavior for entering/resuming pause and pending input; multiplayer deferred. |
+| C02/C05/C10 | Fairness follows actual hazard severity and reachable prevention/mitigation/escape, or a documented earlier informed exposure choice. | Spatial/time/knowledge counterexample plus usable warnings in each supported presentation mode; no universal reaction-time constant. |
+| C04/C05 | Perception projections constrain Ghost strategy. Director initially returns precommit eligibility/pacing constraints; privileged safety veto cannot leak tactical targets. Committed effects obey world rules. | Paired hidden-state tests and exact allowed projections; postcommit exceptions need an explicit later rule. |
+| C01/C04 | Debit once at commitment; causal events and unique outcome claims settle under one declared rule. No ordinary-fault rewards or cascading duplicate payouts. | Partial/shared outcomes, caps, refund/cancel policy, Rage/reward combination, numeric semantics, binding/zero/seal-break precedence. |
+| C06–C08 | Actor owns intentions subject to ability/knowledge; Show owns obligations and consumes resolved events. Impossible mandatory Beats terminate or take an authored fallback; holds are explicitly bounded. | Transition examples for injury, refusal, silence, missing fallback and cancellation. Dialogue correctness and dramatic credibility tested separately. |
+| C01/C07 | Fifth Bell request and acknowledgment differ from cancellation and physical evacuation; no retroactive safety. | Acceptance, same-tick order and independent terminal outcome examples. |
+| C09/C10 | Production binds Role→Actor, Cue→mechanism, staging→Room; verify Ghost reach and semantic signal coverage. Future third-party content is bounded validated data/assets. | Concrete compatible and ambiguous/invalid examples; general loader/editor and broad package splitting deferred to need. |
+| C11 replay | Exact content/rules, initial state, effective command ordering, PRNG algorithm/state, tick/numeric semantics and canonical hashes define reproducibility. Presentation randomness cannot affect rules; unrelated dialogue variation must not alter Ghost strategy. | Choose numeric, RNG separation and encoding conventions and verify supported hosts. Project ChangeID and content/replay schema versions have distinct roles. |
+| C11 continuation | A checkpoint is a fully completed tick with pending work and exact identities. Failed saves retain a valid predecessor; incompatibility preserves data and explains recovery options. | Storage-specific atomicity and stop/resume/failure tests when persistence is scoped. No save framework required for a declared restart-only toy. |
+
+Art Pack compatibility requires fixed-command mechanical parity **and** usable evidence in real viewing/control conditions. These gates do not require identical human behavior. The first concrete content fixture is the [mundane judgment pair](../design/STAGE2_JUDGMENT_EXPERIMENT.md); it does not require every conceptual owner to become a package. C12 multiplayer implementation remains deferred. All negative cases are specified future checks, not results.

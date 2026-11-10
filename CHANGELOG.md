@@ -4,9 +4,23 @@ This log tracks **recorded development integrations** rather than public release
 
 ## Unreleased / review pending
 
-- **Stage 0 contract reconciliation:** all six independent first passes have been received; Adopt / Reject / Defer / Experiment decisions are **not yet integrated**.
-- **PR #2:** proposed Mothlight likeness provenance, pixel derivative, and attribution remains a separate art draft.
-- **Gameplay tests:** no Stage 2 player trials or new simulation code authorized by this record.
+- **Stage 0 remains open:** reconciliation planning decisions are recorded below; exact executable contracts and focused reviewer follow-up remain open.
+- **Art status correction:** PR #2 merged at `3e6386f258c73141b35e109a3c1b510e5b2e30b9`; its derivative/provenance are present, while original full-resolution PNGs remain outside this repository. SF-0004 does not claim that PR #2 had a separate version record.
+- **Gameplay tests:** no Stage 2 player trials or simulation implementation is authorized by this record.
+
+## [0.0.2.4/SF-0004] — 2026-11-09
+
+**Purpose:** record the owner-directed six-review reconciliation and smaller first gameplay experiment.
+
+**Changed:** source-pinned dispositions with preserved dissent; clock/authority, evidence, fair hazards, Director/economy, Production, Bell/Beat, replay/recovery and pause requirements; mundane judgment experiment; staged roadmap and current-document precedence. Exact runtime contracts and empirical results remain open.
+
+**Affected paths:** `README.md`, `docs/ARCHITECTURE.md`, `docs/ROADMAP.md`, `docs/contracts/V0_PLANNED_CONTRACTS.md`, `docs/design/V0_GAMEPLAY.md`, `docs/design/V0_DECISION_REGISTER.md`, `docs/design/STAGE1_VISUAL_DIRECTION.md`, `docs/design/STAGE_FRIGHT_DESIGN_v0.1.md`, `docs/design/STAGE2_JUDGMENT_EXPERIMENT.md`, `docs/reviews/STAGE0_REVIEW_INTAKE.md`, `docs/reviews/STAGE0_RECONCILIATION.md`, `version.json`, `CHANGELOG.md`, `docs/changes/SF-0004.md`.
+
+**Compatibility:** documentation only; no gameplay, schema, dependencies, art or agent identity changes. Revision 2 records meaningful planning corrections; Build 4 becomes current on integration. No release or Stage 0 completion.
+
+**Attribution:** Mothlight — The Invisible Stagehand; original review authors and dissent retained.
+
+**Detailed change record:** [SF-0004](docs/changes/SF-0004.md).
 
 ## [0.0.1.3/SF-0003] — 2026-11-09
 

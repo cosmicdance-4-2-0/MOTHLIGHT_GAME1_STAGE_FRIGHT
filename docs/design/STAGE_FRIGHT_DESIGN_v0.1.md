@@ -5,7 +5,7 @@
 
 **Authoring perspective:** Mothlight — The Invisible Stagehand  
 **Date:** 2026-11-09  
-**Status:** Proposed design; not an implementation or an approved production specification  
+**Status:** Historical initial proposal; not an implementation or an approved production specification. For current planning decisions use [SF-0004 reconciliation](../reviews/STAGE0_RECONCILIATION.md) and the [roadmap](../ROADMAP.md). The body is preserved for provenance; superseded starting positions are not parallel requirements.
 **Primary focus:** Ghost/Director, player loops, NPCs, Plays, dialogue, and modular content  
 **Intended platform strategy:** TypeScript simulation core; PixiJS presentation initially; Node.js headless runner; other clients later
 
@@ -350,7 +350,9 @@ The exact wording is placeholder narrative content; the architectural requiremen
 
 Modules communicate through **versioned data contracts and events**. Do not let the Play invoke renderer methods or let the ghost modify NPC HP directly.
 
-### 9.2 Adventure manifest (illustrative, not locked schema)
+### 9.2 Adventure manifest (historical illustration, not locked schema)
+
+**Known correction:** `entry_scene: ballroom` below conflates Room and Play Scene. A future example must distinguish entry Room from initial Play Scene and include explicit Production and presentation bindings. This preserved example is not accepted loader input; no replacement field schema is ratified here.
 
 ```yaml
 id: stagefright.adventures.last-waltz
@@ -394,7 +396,9 @@ A room definition supplies: background/foreground art layers, walkable polygons 
 
 **Art/simulation separation:** Visual swaying, dust, curtains, and debris may be cosmetic; mechanical lock states, injury, prop destruction, and event causation remain authoritative and deterministic.
 
-## 11. The first playable Adventure: *The Last Waltz*
+## 11. Historical integrated Adventure candidate: *The Last Waltz*
+
+**SF-0004 sequencing correction:** this larger slice follows the relevant bounded experiments. The earliest gameplay test is the [mundane judgment pair](STAGE2_JUDGMENT_EXPERIMENT.md). Duration, mechanism count and binding scope below remain historical hypotheses, not first-test requirements.
 
 **Target vertical slice:** Approximately 8–12 minutes, one fixed-camera ballroom/backstage room with one actor, one player, three mechanism classes (chandelier restraint, curtain winch, spotlight control), five show beats, and a narrowly capable ghost.
 
@@ -411,7 +415,9 @@ A room definition supplies: background/foreground art layers, walkable polygons 
 
 **Player controls:** Move, Inspect, Operate, Communicate, Use item; one context action at a time. The interface should remain comprehensible before texture polish or voice acting.
 
-## 12. Milestones and acceptance gates
+## 12. Historical CP0–CP5 proposal
+
+**SF-0004 precedence:** the [experimental roadmap](../ROADMAP.md) supersedes this dependency sequence. Retain the following as initial design history; do not combine it with Stage 0–8 into a larger mandatory checklist.
 
 ### CP0 — Headless rules demonstration
 
