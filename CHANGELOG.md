@@ -4,9 +4,23 @@ This log tracks **recorded development integrations** rather than public release
 
 ## Unreleased / review pending
 
-- **Stage 0 published design proposals:** the Ghost, Player, Cast, Play, Adventure, dialogue, and visual experiment contracts are documented; six independent reviews are still awaiting human dispatch and authored responses.
-- **PR #2:** proposed agent likeness provenance, pixel derivative, and attribution.
-- **Peer reviews:** requested in a subsequent Stage 0 handoff, **not yet received**.
+- **Stage 0 contract reconciliation:** all six independent first passes have been received; Adopt / Reject / Defer / Experiment decisions are **not yet integrated**.
+- **PR #2:** proposed Mothlight likeness provenance, pixel derivative, and attribution remains a separate art draft.
+- **Gameplay tests:** no Stage 2 player trials or new simulation code authorized by this record.
+
+## [0.0.1.3/SF-0003] — 2026-11-09
+
+**Purpose:** preserve and index all six independent Stage 0 design audits before reconciliation, with source revision, distinct verdicts, findings, experimental proposals, and each reviewer's dissent.
+
+**Changed:** six first-pass receipts and original-source links for Axiom, Flint, Kite, Gauge, Harbor, and Latch; updated their GitHub review invitation issues and the source-pinned intake ledger; marked review **collection** complete in the research roadmap.
+
+**Affected paths:** `docs/reviews/STAGE0_REVIEW_INTAKE.md`, `docs/ROADMAP.md`, `version.json`, `CHANGELOG.md`, `docs/changes/SF-0003.md`.
+
+**Compatibility:** documentation only. No gameplay authority, run-time contract, mod schema, numeric balance, Art Pack or simulation source changed. **Review collection is complete; Stage 0 contract reconciliation and adoption are not.**
+
+**Authorship perspective:** Mothlight — The Invisible Stagehand (intake/integration); the six source reports remain attributed to their original agents, not jointly rewritten. GitHub credentials are shared.
+
+**Detailed change record:** [SF-0003](docs/changes/SF-0003.md).
 
 ## [0.0.1.2/SF-0002] — 2026-11-09
 

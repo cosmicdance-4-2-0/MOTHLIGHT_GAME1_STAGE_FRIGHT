@@ -19,7 +19,7 @@ This repository has TypeScript/npm workspaces, a separate headless package, Pixi
 - [x] A Stage 1 art decision protocol: [art direction exploration](design/STAGE1_VISUAL_DIRECTION.md).
 - [ ] Review and reconcile these documents with the [original draft GDD](design/STAGE_FRIGHT_DESIGN_v0.1.md).
 - [x] Publish a source-pinned independent [six-agent review handoff](reviews/STAGE0_SIX_AGENT_HANDOFF.md).
-- [ ] Receive and preserve six independent first-pass reports; maintain [review intake](reviews/STAGE0_REVIEW_INTAKE.md).
+- [x] Receive and preserve six independently authored first-pass reports; maintain [review intake](reviews/STAGE0_REVIEW_INTAKE.md). **Collection only; reconciliation pending.**
 - [ ] Publish reconciliation with dissent intact before approving gameplay contracts.
 - [ ] Resolve or explicitly defer the blocking open questions; distinguish **proposed**, **adopted** and **experiment** decisions.
 - [ ] Record falsifiable acceptance examples and negative cases for every contract before implementation.
