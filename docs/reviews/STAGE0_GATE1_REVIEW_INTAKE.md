@@ -10,12 +10,12 @@
 
 | Agent | Focus | Status | Own report / source revision | Original dissent |
 | --- | --- | --- | --- | --- |
-| Axiom | Transition ownership and phase arbitration | Awaiting human dispatch | — | — |
-| Latch | Command provenance, issuer rights, information firewall | Awaiting human dispatch | — | — |
-| Gauge | Tick/replay/energy/incident determinism | Awaiting human dispatch | — | — |
-| Harbor | Pause, Bell, finite Beat, recovery frontier | Awaiting human dispatch | — | — |
-| Flint | Minimum toy contract, removal of premature abstraction | Awaiting human dispatch | — | — |
-| Kite | Falsification, fair observation and practical timelines | Awaiting human dispatch | — | — |
+| Axiom | Transition ownership and phase arbitration | Awaiting human dispatch | [Issue #12](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/12) — invitation | — |
+| Latch | Command provenance, issuer rights, information firewall | Awaiting human dispatch | [Issue #13](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/13) — invitation | — |
+| Gauge | Tick/replay/energy/incident determinism | Awaiting human dispatch | [Issue #14](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/14) — invitation | — |
+| Harbor | Pause, Bell, finite Beat, recovery frontier | Awaiting human dispatch | [Issue #15](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/15) — invitation | — |
+| Flint | Minimum toy contract, removal of premature abstraction | Awaiting human dispatch | [Issue #16](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/16) — invitation | — |
+| Kite | Falsification, fair observation and practical timelines | Awaiting human dispatch | [Issue #17](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/17) — invitation | — |
 
 ## Collection and reconciliation discipline
 
@@ -29,10 +29,14 @@
 
 - [x] Owner requested six focused Gate 1 reviews
 - [x] Common assignment source-pinned to SF-0004
-- [ ] Six named review issues created and linked
+- [x] Six named review issues created and linked (**invitations only; no agents automatically started**)
 - [ ] Six independent first-pass reports submitted and preserved
 - [ ] Mothlight reconciliation and explicit temporal/command contract completed
 - [ ] Gate 1 evidence accepted and integrated
 
 This tracker belongs to the **dispatch proposal**, not the current ratified gameplay specification.
 
+
+## Dispatch receipt
+
+Six separate GitHub invitation issues were created for Axiom #12, Latch #13, Gauge #14, Harbor #15, Flint #16 and Kite #17. Their handoff references the *unchanged immutable* design input `107ae2b446405d225feac01595e9ead08d679bde` and handoff commit `e538b19c781d28e7c0754cb8438f401b3b93efd3`. **No reviews received.** The owner must deliver or boot the six individual agent profiles. Mothlight integrates only after independently preserved submissions.
