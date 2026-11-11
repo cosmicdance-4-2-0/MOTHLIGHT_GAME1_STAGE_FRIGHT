@@ -21,7 +21,7 @@ This repository has TypeScript/npm workspaces, a separate headless package, Pixi
 - [x] Publish a source-pinned independent [six-agent review handoff](reviews/STAGE0_SIX_AGENT_HANDOFF.md).
 - [x] Receive and preserve six independently authored first-pass reports; maintain [review intake](reviews/STAGE0_REVIEW_INTAKE.md). **Collection complete; original reports and dissent remain preserved.**
 - [x] Record [six-review reconciliation](reviews/STAGE0_RECONCILIATION.md) with source pins, Adopt / Reject / Defer / Experiment dispositions, dissent and focused follow-up questions. Planning adoption does not ratify executable contracts.
-- [ ] Close the reconciliation's remaining gates: exact tick arbitration, observation/timing examples, Ghost projections and settlement, Bell/Beat terminal behavior, replay numerics and concrete bindings. Deferral must name the affected later implementation gate.
+- [ ] Close the reconciliation's remaining gates: [Gate 1 authority proposal](reviews/STAGE0_GATE1_RECONCILIATION_PROPOSAL.md) and [Gate 2 chandelier fixture](design/STAGE0_GATE2_CHANDELIER_MECHANISM.md) were merged as **provisional design documentation** in PRs #18–20. Their post-merge alignment provides explicit **paper** tick/observation/interlock traces; formal acceptance, runnable tests, Ghost settlement/numerics, Bell/Beat execution and concrete bindings remain open at named later gates.
 - [ ] Record falsifiable acceptance examples and negative cases for every contract before implementation.
 
 **Stage 0 remains open.** No implementation, art-production or release authority follows from SF-0004.
