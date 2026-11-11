@@ -4,7 +4,7 @@
 **Status:** provisional Gate 2 design proposal, **not** accepted engine contract, playable game, or evaluated trial  
 **Frozen planning source:** `107ae2b446405d225feac01595e9ead08d679bde` (`0.0.2.4/SF-0004`)  
 **Predecessor:** [selected judgment experiment](STAGE2_JUDGMENT_EXPERIMENT.md), reconciliation R-03/R-04/R-08/R-16  
-**Concurrent dependency:** [Stage 0 Gate 1 authority handoff](../reviews/STAGE0_GATE1_AUTHORITY_HANDOFF.md) on proposed branch `docs/stage0-gate1-authority-dispatch`. This fixture does **not** choose Gate 1's arbitration rules.
+**Concurrent dependency:** [Stage 0 Gate 1 authority handoff](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/blob/e538b19c781d28e7c0754cb8438f401b3b93efd3/docs/reviews/STAGE0_GATE1_AUTHORITY_HANDOFF.md) on proposed branch `docs/stage0-gate1-authority-dispatch`. This fixture does **not** choose Gate 1's arbitration rules.
 
 ## 1. What this fixture must prove
 
