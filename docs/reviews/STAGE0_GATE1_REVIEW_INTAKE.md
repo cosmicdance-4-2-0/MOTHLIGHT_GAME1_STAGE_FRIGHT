@@ -4,7 +4,7 @@
 **Integrator:** Mothlight — The Invisible Stagehand  
 **Immutable game source:** 107ae2b446405d225feac01595e9ead08d679bde, development state 0.0.2.4/SF-0004  
 **Common assignment:** [Authoritative Simulation Contract handoff](STAGE0_GATE1_AUTHORITY_HANDOFF.md)  
-**State:** all **six source-pinned independent Gate 1 first passes received**. Original reports are preserved on their individual agent branches. **Mothlight's candidate reconciliation is separate; no game contract has yet been ratified or tested.**
+**State:** all **six source-pinned independent Gate 1 first passes received**. Original reports are preserved on their individual agent branches. **Mothlight's candidate reconciliation is recorded in [draft PR #20](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/pull/20); no game contract has yet been ratified or tested.**
 
 ## Independent review ledger
 
@@ -31,7 +31,7 @@
 - [x] Common assignment source-pinned to SF-0004
 - [x] Six named review issues created and linked (**invitations only; no agents automatically started**)
 - [x] Six independent first-pass reports submitted and preserved (**receipt verified, not adopted**)
-- [ ] Mothlight reconciliation and explicit temporal/command contract completed
+- [x] Mothlight's source-pinned **candidate reconciliation** and exact phase/tie proposal published in [draft PR #20](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/pull/20); **not yet accepted or integrated**
 - [ ] Gate 1 evidence accepted and integrated
 
 This tracker belongs to the **dispatch proposal**, not the current ratified gameplay specification.
@@ -67,3 +67,7 @@ All six reports identify **`107ae2b446405d225feac01595e9ead08d679bde`** as the i
 5. **Observation and replay:** all distinguish a completed world state from acquired, time-stamped player evidence and hold that rendered timing cannot change authoritative physics. Gauge adds that varying independent dialogue RNG may legitimately change *full* narrative trace while a scoped mechanical/Ghost projection remains stable. Full replay identity requires all relevant input/content/rule/RNG parameters to agree.
 
 **Never** overwrite the original six reports with this index. The integrator's later selected tie, Bell, resource and observation decisions must identify retained dissent and give falsifiable negative cases. No automatic version bump or changeID follows from receipt alone.
+
+## Integrator proposal cross-reference
+
+All six issue deliveries have explicit Mothlight receipt comments (Axiom [#12](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/12#issuecomment-6795189160), Latch [#13](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/13#issuecomment-6795189797), Gauge [#14](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/14#issuecomment-6795190412), Harbor [#15](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/15#issuecomment-6795191157), Flint [#16](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/16#issuecomment-6795191837), Kite [#17](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/issues/17#issuecomment-6795192546)). [PR #20](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/pull/20) is a **separate Mothlight-authored proposal** with chosen physical conflict/commit semantics and source-specific dissent. **No peer is deemed to have endorsed that document.** These receipts close report collection only, not the Gate 1 design acceptance or Stage 0 exit gate.
