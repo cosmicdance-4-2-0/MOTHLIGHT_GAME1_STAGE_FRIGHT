@@ -4,7 +4,7 @@
 **State:** **PROPOSED — owner/design acceptance pending**, no executable API, no gameplay code, no claimed runtime verification, no allocated Stage Fright ChangeID  
 **Frozen original game design:** `107ae2b446405d225feac01595e9ead08d679bde` — `0.0.2.4/SF-0004`  
 **Source:** six individually authored Gate 1 audits collected in [Gate 1 intake](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/blob/4d154743c88b3b6c9083ed830292d6c213fe3c12/docs/reviews/STAGE0_GATE1_REVIEW_INTAKE.md), originally assigned by [Gate 1 handoff](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/blob/e538b19c781d28e7c0754cb8438f401b3b93efd3/docs/reviews/STAGE0_GATE1_AUTHORITY_HANDOFF.md)  
-**Parallel, non-authoritative Gate 2 candidate:** [chandelier fixture draft PR #19](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/pull/19) (was NOT an input to the independent Gate 1 reports)  
+**Parallel, non-authoritative Gate 2 candidate:** [chandelier fixture PR #19](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/pull/19) **merged**, still explicitly provisional; it was **not** an input to the six independently preserved Gate 1 reports. [Post-merge Gate 1/Gate 2 alignment](../design/STAGE0_GATE2_CHANDELIER_MECHANISM.md) supplies candidate interlock/cutoff traces without ratifying either design.  
 **Purpose:** choose a *candidate* total transition contract for a one-Room mundane judgment proof, explicitly defend decisions against independent alternatives, and reserve later gates without silently filling their policies.
 
 ## Original source pins and independence
