@@ -2,8 +2,8 @@
 
 **Authorial perspective:** Mothlight — The Invisible Stagehand  
 **Status:** **PROPOSED Stage 0 Gate 3 protocol**, not an approved preregistration, executed experiment, implementable software schema, accepted Stage 0 closeout, or finding of fun  
-**Source baseline:** Stage Fright `main@661100234d7e52de9dbca98032353db05fbcf91c`, `0.0.2.5/SF-0005` (PR #21 merged by owner override)  
-**Pending dependency:** [PR #22](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/pull/22) clarifies Cue provenance and trial-stage vocabulary; it is **not** merged at this source baseline  
+**Source baseline:** Stage Fright `main@16414b1d59a04b9f14164dc9ba05956dbf0db5f9`, `0.0.2.6/SF-0006` (PRs #21 and #22 merged; contracts still provisional)  
+**Documented dependency:** [PR #22](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/pull/22) **merged** Cue provenance and trial-stage vocabulary as provisional documentation, **not** an accepted runtime contract  
 **Primary sources:** [Stage 2 judgment-experiment plan](STAGE2_JUDGMENT_EXPERIMENT.md), [Gate 2 chandelier mechanism](STAGE0_GATE2_CHANDELIER_MECHANISM.md), [Gate 1 authority proposal](../reviews/STAGE0_GATE1_RECONCILIATION_PROPOSAL.md), [Stage 0 reconciliation](../reviews/STAGE0_RECONCILIATION.md), [roadmap](../ROADMAP.md)  
 **Related completed design reviews:** six individually preserved Gate 1 agent reports, Ven's owner-relayed audit and follow-up, with attribution intact in SF-0005. This protocol is Mothlight's proposal, **not their collective approval**.
 
@@ -51,7 +51,7 @@ Before Stage 2 participants see the toy, an authorized implementation/test owner
 3. **Time and authority:** positive whole active-step durations; no overlap/queue of timed Player jobs; observations sampled post-world at completion and usable for a *later* action; pause stops active steps; command IDs and Show/World provenance are preserved.
 4. **A consequences:** natural flourish completes if not held; legal later Hold arrests ongoing still-interruptible drive, costs the intended Beat, does not damage scenery.
 5. **B consequences:** if a valid Hold matures in the threshold step, P4/P5 engagement prevents autonomous P5 impact commitment; a Hold first maturing in the following step cannot undo the pending impact maturing at P2. Impact is once-only and causally identified.
-6. **B dramatic bookkeeping:** damage terminally blocks `CHAND_FLOURISH`; a later scheduled Cue **never becomes a fabricated World request**. With PR #22 semantics if adopted, Show emits a distinct one-time `SCHEDULED_CUE_SUPPRESSED(reason=BEAT_BLOCKED)` at due step; when safely held, the genuine later Cue can instead reach World and be suppressed by the physical interlock. Protocol analysis cannot collapse these two causes.
+6. **B dramatic bookkeeping:** damage terminally blocks `CHAND_FLOURISH`; a later scheduled Cue **never becomes a fabricated World request**. Under the source-pinned **SF-0006 provisional Show/World rule**, Show emits a distinct one-time `SCHEDULED_CUE_SUPPRESSED(reason=BEAT_BLOCKED)` at due step; when safely held, the genuine later Cue can instead reach World and be suppressed by the physical interlock. Protocol analysis cannot collapse these two causes.
 7. **Observation equivalence:** supported alternative visual/audio/text/input channels present the *same actionable facts*, not identical pixels. Validate target play size, contrast, focus, caption order, cue-board reading and inspection feedback; do not assume a physically tiny witness mark is usable.
 8. **Finite exit:** the Beat has due and deadline boundaries with terminal `satisfied/held/missed/blocked` outcomes, never infinite waiting. No Ghost, Rage, binding, content loader or full save implementation is needed.
 9. **Reproducibility:** a case can be replayed headlessly with identical rule/content/input/seed identity; changed renderer cadence cannot change authoritative state. Track whether any incomplete/unsupported host test is a **blocker** before human exposure rather than incorrectly claiming it passed.
@@ -164,7 +164,7 @@ A negative result can mean "poor clues," "poor timing," "poor interface," "unint
 | **T3-03** | B has discriminating physical evidence, but traversal/Read/Inspect/Hold exceeds last legal cutoff | **INVALID B**; not "player reacted slowly" |
 | **T3-04** | Timed Inspect finishes on fault-threshold step and participant tries same-step Hold using it | **NO RETROACTIVE ACTION**; evidence can inform only a later step |
 | **T3-05** | Safe Hold prevents trim damage but regular Cue is later suppressed | Safety preserved, Beat may be missed; report separate outcomes |
-| **T3-06** | Damaged B terminally blocks Beat before ordinary Cue due | **Show-only skipped-schedule receipt** under PR #22 semantics if accepted, no World command |
+| **T3-06** | Damaged B terminally blocks Beat before ordinary Cue due | **Show-only skipped-schedule receipt** under merged provisional SF-0006 semantics, no World command; require formal contract acceptance before implementation |
 | **T3-07** | Baseline always-Hold performs well physically but loses A flourish | Do not declare universal superiority using one scalar |
 | **T3-08** | Cue-board-only policy perfectly classifies the original pair | Initial judgment finding **not transferable** without crossed held-out test |
 | **T3-09** | Same participant sees B after learning A's resolution | Later run is **exposed**, not a second naive independent observation |
@@ -204,12 +204,12 @@ A Gate 3 acceptance packet must identify:
 | Scripted always-Hold/Never-Hold/Inspect-all/Cue-book baselines | **Propose** | Test whether the "judgment" loop is more than trivial controls |
 | No numbers before pilot/locked preregistration | **Require** | Avoid ungrounded participant targets, deadlines and significance thresholds |
 | Accessibility and consent before participant exposure | **Require** | Information fairness and voluntary participation are part of experiment validity |
-| Ven's follow-up Cue-receipt distinction | **Dependency on open PR #22** | Do not state that an unmerged clarification is already canonical |
+| Ven's follow-up Cue-receipt distinction | **Merged into SF-0006 as provisional documentation** | Use its Show-only versus World-interlock cause distinction; merge is not equivalent to runtime contract acceptance |
 | Runtime/Playwright browser test status | **Later technical preflight** | R0 CI success/failure is not an empirical gameplay result |
 | Owner accepts Stage 0 Gate 3 by merging this draft alone | **Reject** | A documentation merge is not an explicit gate acceptance under the roadmap |
 
 **Reviewer questions:** Does first-exposure allocation actually test a meaningful act/refrain choice? Can the participant access crucial evidence before either cutoff in supported modes? Do any controls use knowledge a human cannot obtain? Can we distinguish rational cautious intervention from blind reflex? Would any "negative result" be attributable only to an unfair fixture? Which assumptions must be locked before the first nonpilot participant?
 
-**No peer agent response is claimed in this document. No new project version/ChangeID is allocated to this draft.** [PR #22](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/pull/22) already proposes the next development serial `SF-0006`. Preserve monotonic versioning and decide the follow-on accepted integration version **after** PR #22's disposition; do not create competing `SF-0006` entries or edit `main` merely to publish a research proposal.
+**No peer agent response is claimed in this document.** This draft PR proposes **`0.0.2.7/SF-0007` only as its own future documentation integration record**; it is neither the current main version nor evidence of Gate 3 acceptance. [PR #22](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/pull/22) has merged as `0.0.2.6/SF-0006`. Preserve that history and require separate owner gate approval before declaring this protocol adopted.
 
 *The experiment should be capable of telling us that the stagehand's job isn't interesting. Otherwise we have designed a demonstration, not a test.* — Mothlight
