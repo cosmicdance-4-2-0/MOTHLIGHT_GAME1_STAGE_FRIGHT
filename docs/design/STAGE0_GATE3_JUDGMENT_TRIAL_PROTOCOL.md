@@ -80,7 +80,7 @@ Before Stage 2 participants see the toy, an authorized implementation/test owner
 | **Stage 2 exploratory pilot** | Discover unclear instructions, impossible timing, input friction and suitable range of parameter values | **Pilot participants and adjusted cases are not confirmatory evidence**. Record changes and excluded/invalid trials |
 | **Preregistration lock** | Freeze revised fixture, randomization, analysis set, target recruitment/precision, candidate minimum-meaningful criteria, exclusions, comparison policy and stopping rules | Timestamp + immutable version reference **before any confirmatory participant**. No numerical default or sample size is authorized here |
 | **Stage 2 blinded initial trial** | Collect independent **first exposures** with controlled allocation to A or B | No coaching, revealed answer or information-sharing; repeated visits are secondary and not independent |
-| **Stage 2 held-out transfer** | Pilot and preflight **both** complementary crossed conditions C/D before any local transfer claim; study them after initial A/B decisions if approved | Label participants as *naive to the specific C/D fixture* only when true; record prior A/B training, order and disclosure, never describe A/B-exposed players as globally naive |
+| **Stage 2 held-out transfer** | Pilot and preflight **both** complementary crossed conditions C/D before any local transfer claim; assign each person's *first transfer exposure* to one registered C-or-D condition, with any subsequent cross-case exposure labeled repeated/learning | Label participants as *naive to the specific C/D fixture* only when true; record prior A/B training, randomization, order and disclosure, never describe A/B-exposed players as globally naive |
 | **Stage 2 analysis/revision** | Compare outcomes to registered hypotheses and baselines; decide keep, revise or reject | Negative/null/unusable results are preserved; any revised protocol starts a new research iteration |
 
 **No participant count selected.** Owner(s) can volunteer later, including potentially multiple personally known participants, but relationship or availability never substitutes for independence, consent or sample accounting. Two people trying the game separately can supply useful **exploratory** observations; they do not automatically establish a confirmatory effect or population estimate. Participants' study IDs are not human identity fields.
@@ -201,8 +201,12 @@ A negative result can mean "poor clues," "poor timing," "poor interface," "unint
 | **T3-14** | Participant declines recording, withdraws, or technical capture fails | Follow consent/missing-data process; no retrospective invented measurements |
 | **T3-15** | Human Run differs when renderer frame cadence changes on same inputs | **TECHNICAL BLOCK** (compare controlled replay separately from different human choices) |
 | **T3-16** | Two known participants explore one case each without preregistered thresholds | Valid **exploratory evidence**, not a confirmatory population conclusion |
+| **T3-17** | No Hold request or prospective Refrain marker occurs; after the Run the player says "I decided to wait" | Primary class **`NO_HOLD_UNCLASSIFIED`**; retrospective intent claim remains supplemental, never a retroactive declaration |
+| **T3-18** | A Refrain marker appears only after the last legal Hold window or when the player was incapable of intervening | **`UNABLE_OR_TOO_LATE`** for the free-choice analysis; a late marker cannot establish a contemporaneous intentional restraint decision |
+| **T3-19** | Original A/B choices and polished post-run explanations match expectations, but Cue-board-only yields identical actions | **H3-02 remains case-specific** evidence-consistent behavior; neither predecision mental causation nor physical-rule comprehension is established |
+| **T3-20** | Held-out C works, but D is missing, inaccessible or physically non-equivalent | No complementary two-direction H3-04 claim; report C as one-direction **exploratory** challenge to the shortcut, and identify the invalid/missing comparison |
 
-This is an **audit checklist**, not a record of sixteen tests passing. An owner/design acceptance is based on clear definitions and counterexamples; executable and human checks are later Stage 2 work.
+This is an **audit checklist**, not a record of twenty tests passing. An owner/design acceptance is based on clear definitions and counterexamples; executable and human checks are later Stage 2 work.
 
 ## 11. Minimum complete Gate 3 handoff to Stage 2
 
@@ -213,7 +217,7 @@ A Gate 3 acceptance packet must identify:
 3. First-exposure randomization, training, neutral investigator conduct, no-coaching, data/consent and debrief procedure;
 4. Scripted comparison policies and the separate mechanical, reasoning and experience measures;
 5. Pilot-to-confirmatory revision discipline, named parameter-lock checklist and stopping/exclusion principles;
-6. T3-01–T3-16 expected **paper** checks, counterarguments, documented uncertainty and later-gated implementation;
+6. T3-01–T3-20 expected **paper** checks, counterarguments, documented uncertainty and later-gated implementation;
 7. Explicit gate ownership: Mothlight integration, independent critique if requested, **human owner** acceptance and a **separately scoped Stage 2 implementation** order.
 
 **Still deliberately open at Stage 0:** actual numeric timings, sample count, threshold values, final art/controls, consent-form wording, data storage tooling, algorithm implementation, headless/browser test executions and participant outcomes. These must be settled at their **identified preflight/preregistration frontiers**; leaving them named is not pretending they already exist.
@@ -234,7 +238,7 @@ A Gate 3 acceptance packet must identify:
 | Runtime/Playwright browser test status | **Later technical preflight** | R0 CI success/failure is not an empirical gameplay result |
 | Owner accepts Stage 0 Gate 3 by merging this draft alone | **Reject** | A documentation merge is not an explicit gate acceptance under the roadmap |
 
-**Protocol amendment note — review requested by owner:** The four amendments above were made in the **same Gate 3 draft**, without a new experiment version or separately authored game-mechanics change: (1) retrospective narratives are secondary evidence only, (2) deliberate restraint requires a prospective observable marker when available and nonaction is otherwise unclassified, (3) H3-02 is only an A/B evidence-consistent behavioral finding, and (4) H3-04 requires complementary C/D cases for even a bounded local-transfer claim. They add neither new participants nor executed tests.
+**Protocol amendment note — review requested by owner:** The four amendments above were made in the **same Gate 3 draft**, with four additional unexecuted negative cases T3-17–T3-20, without a new experiment version or separately authored game-mechanics change: (1) retrospective narratives are secondary evidence only, (2) deliberate restraint requires a prospective observable marker when available and nonaction is otherwise unclassified, (3) H3-02 is only an A/B evidence-consistent behavioral finding, and (4) H3-04 requires complementary C/D cases for even a bounded local-transfer claim. They add neither new participants nor executed tests.
 
 **Reviewer questions:** Does first-exposure allocation actually test a meaningful act/refrain choice? Can the participant access crucial evidence before either cutoff in supported modes? Do any controls use knowledge a human cannot obtain? Can we distinguish rational cautious intervention from blind reflex? Would any "negative result" be attributable only to an unfair fixture? Which assumptions must be locked before the first nonpilot participant?
 
