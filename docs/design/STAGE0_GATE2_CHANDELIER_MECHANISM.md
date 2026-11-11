@@ -58,10 +58,12 @@ A **fixed primary suspension** remains secure for both initial test conditions. 
 | --- | --- | --- |
 | `support` | `secure` | Constant for this experiment; catastrophic support failure out of scope |
 | `travelLimit` | `within-window`, `outside-window` | Physical limiting condition; is not identical to Show authorization |
-| `motion` | `rest`, `early-small`, `controlled-sway`, `overtravel`, `arrested` | Physical presentation-driving mode resulting from valid causes |
-| `hold` | `not-engaged`, `engaged` | World-authoritative, physically modeled safety interlock; engagement requires a declared eligible mode, reach and last-effective cutoff |
+| `motion` | `rest`, `early-small`, `controlled-sway`, `overtravel`, `arrested` | Physical progression; `early-small`/`controlled-sway` are interruptible, `overtravel` marks an already committed noninterruptible trim impact in this fixture |
+| `hold` | `not-engaged`, `engaged` | World-owned safety latch, legal from `rest`, `early-small` or `controlled-sway`; no engagement that reverses `overtravel` or existing impact |
 | `scenicTrim` | `intact`, `disturbed` | A consequence of overtravel, once only |
-| `cueState` | `pending`, `requested`, `fulfilled`, `held`, `missed` | **Show-owned trace field only**, never part of the mechanism's independently writable physical state |
+| `cueStatus` | `pending`, `requested`, `applied`, `suppressed`, `conflicted` | Show-owned request/disposition trace; a Cue has no physical write authority by itself |
+| `beatDisposition` | `pending`, `satisfied`, `held`, `missed`, `blocked`, `improvised`, `canceled` | Separate Show-owned dramatic state with a finite deadline; never inferred from `cueStatus` alone |
+| `pendingTrimImpact` | absent or `{sourceIncident, dueStep}` | World-owned, already **committed and noninterruptible** obligation; generated at the threshold-crossing step, applied at P2 of the next active step |
 | `observationSet` | time-stamped factual readings | Each observation has source station, acquisition tick, validity/freshness and accessible modality |
 
 The two initial cases **may differ in hidden mechanism facts and Production revision**, but the **first player-visible sensory projection must be matched** within the chosen target Shot and accessibility profile. Experiment controllers may inspect complete world truth; an in-game `Inspect` may not.
@@ -74,15 +76,15 @@ The Play has an **approved early flourish**. Its locally available effective rev
 
 **Competent path:** notice motion; optionally consult the effective cue posting and/or inspect travel; infer that limited early movement is intended; refrain from engaging the hold; the flourish completes. The Run log retains the real Cue cause, but the player only learns what their observations support.
 
-**Unnecessary hold:** a valid early `Operate` engages the hold, arresting authorized movement. The Show records a `held` or `missed` flourish and takes the stated finite recovery path. This is a **causal performance cost**, not arbitrary damage points. Holding does not injure or teleport anyone; release/recovery, if offered, must be separately specified and time-bearing.
+**Informed but unnecessary post-symptom hold:** the revised Cue has **already** committed and begun moving the chandelier before the common symptom is observed. After a physically available Desk/Rig reading, a valid later `Operate(HOLD)` can still arrest `early-small` or `controlled-sway` motion through the genuine safety latch, provided it finishes before the flourish's last interruptible boundary. This is an interruption of **ongoing committed motion**, not a battle against a fresh Cue. It is one physically lawful way for the player to make an informed yet mistaken choice. The hold arrests authorized movement. The Show records a `held` or `missed` flourish and takes the stated finite recovery path. This is a **causal performance cost**, not arbitrary damage points. Holding does not injure or teleport anyone; release/recovery, if offered, must be separately specified and time-bearing.
 
 ### B. Ordinary travel-limiter fault (informed intervention)
 
-The Cue remains on its ordinary schedule. A material travel-limiter fault (`outside-window`) causes initially similar movement under normal stage vibration or environmental forces. Over the authored progression, movement becomes `overtravel` unless a legitimate hold is applied.
+The Cue remains on its ordinary schedule. A material travel-limiter fault (`outside-window`) causes initially similar movement under normal stage vibration or environmental forces. This movement is **World-owned autonomous progression**, not a phantom Show Cue or competing external command. In B the ordinary flourish remains scheduled for a later Beat; **no early flourish is due at the initial symptom**. Over the authored progression, movement becomes `overtravel` unless a legitimate hold is applied.
 
-**Competent path:** use the current Cue posting and/or local rig evidence; infer that movement is inconsistent with safe operation; move to `HOLD` and operate in the last feasible window; motion becomes `arrested`; scenic trim remains intact. The performer may cover a missed flourish, but prevention stays a real success.
+**Competent path:** use the current Cue posting and/or local rig evidence; infer that movement is inconsistent with safe operation; move to `HOLD` and operate in the last feasible window; motion becomes `arrested`; scenic trim remains intact. The normal scheduled flourish may be held when the safety latch stays engaged, but preventing scenery damage remains a real success even if the Beat is missed. The first toy does not provide a repair/release action that could make the unsafe limiter safe before that Beat.
 
-**Missed or late hold:** the world mechanism passes the overtravel threshold, disturbing scenic trim. The Show independently records `missed` / `improvised` / `canceled` according to authored, finite Beat rules. A valid late request cannot retroactively restore the trim, though it may arrest further motion if world conditions allow.
+**Missed or late hold:** the world mechanism passes the overtravel threshold, disturbing scenic trim. In this first toy, a committed impact makes the subsequent ordinary flourish **blocked** for safety; neither an improvised flourish nor automatic cancellation is invented. A late hold cannot retroactively restore the trim; once `overtravel` is committed, this toy's HOLD is no longer a legal interrupt (a later expansion could separately author mitigation of additional motion).
 
 **Ordinary fault yields no Ghost resources or attribution.** Its cause is authored physical state, not a secret Ghost event, cinematic override or automatic player-failure meter.
 
@@ -99,25 +101,26 @@ Gate 1 owns exact tick arbitration. Gate 2 supplies the *mechanical predicates* 
 | `Move(station)` | reachable graph edge, player free to move | position progresses only through permitted traversal time | reject/defer according to Gate 1; cannot skip through locations |
 | `Inspect(RIG)` | physically within reach, capable through completion, observation affordance exists | after `inspectTicks[RIG]` active steps, sample permitted **post-world completed-boundary** evidence at `S[t+d]`, usable for decision step `t+d` | no remote/oracle result; paused time does not count; interrupted/invalid job acquires no fresh facts |
 | `Read(DESK)` | at desk and able to acquire its posting, **or** already owns cached notes | a new posted revision is acquired only after the declared `readTicks[DESK]` active steps, time-stamped as Production intent; old notes can be reread for free | not a world-safety verdict; same complete-tick publication and pause boundaries as Inspect, no instant new information via UI |
-| `Operate(HOLD)` | at HOLD, capable, duration fully paid, physical interlock legal **before** its declared last-effective boundary | a winning world-resolved Hold engages the interlock; motion arrests **only if the current mode is physically interruptible**; a fresh uncommitted Cue may be suppressed by that interlock | conflicting writes have explicit receipts; late Hold cannot undo previously matured impact or trim damage; player identity alone never wins |
+| `Operate(HOLD)` | at HOLD, capable, duration fully paid, physical latch permitted in `rest`, `early-small` or `controlled-sway` at the applicable cutoff | a winning world-resolved Hold engages the latch, arrests **ongoing committed but still interruptible** motion, or suppresses a newly requested Cue through the same physical interlock | no player-priority exception; in `overtravel`/after a pending impact the Hold cannot undo committed damage and returns the declared `TOO_LATE` disposition |
 | `Refrain` | always possible when conscious/free | no operation; time still progresses if unpaused | never synthesize an intervention merely because a timer elapsed |
 | `CueRequest(EARLY_FLOURISH)` | effective Production revision permits; Show has reached Cue eligibility | request movement from world; world accepts only physically legal effect | no independent Show write; request and player hold collision is Gate 1 |
-| `OvertravelConsequence` | world motion exceeds authored envelope, trim intact | `scenicTrim := disturbed` once, with causal trace | after-the-fact hold cannot undo it; trigger/hold exact tie is Gate 1 |
-| `BeatResolve` | Show has a completed world result or bounded failure condition | finite `fulfilled / held / missed / improvised / canceled` disposition | no eternal wait and no invented successful flourish |
+| `AutonomousFaultProgress` | B is outside safe window; no effective latch | in World P5 after fresh arbitration, progression may cross its threshold and **commit** `pendingTrimImpact` once; impact matures in P2 of the next active step | same-step winning Hold prevents threshold crossing; after commitment Hold cannot undo impact |
+| `OvertravelConsequence` | committed `pendingTrimImpact.dueStep` matures in P2; trim intact | `scenicTrim := disturbed` once, causal child of the same fault | already committed impact resolves before fresh Hold; duplicate processing adds no damage |
+| `BeatResolve` | Show has a completed world result or its authored Beat deadline expires | finite `satisfied / held / missed / blocked / improvised / canceled` disposition distinct from Cue request status | no eternal wait, no forced performance and no automatic cancellation on trim damage |
 
 The fixture must provide at least one **safe**, **fault-before-consequence**, **fault-after-consequence**, and **unnecessary-hold** state. A correct intervention may protect the set while sacrificing the flourish. Neither outcome dimension should be collapsed into a single arbitrary winner label.
 
-**Gate 1 candidate now supplies paper dispositions** for effective command ticks, post-world observation publication, same-tick Hold/Cue and prior-impact cutoffs, duplicate/stale handling and pause. They are incorporated conditionally below; **no execution or formal Gate 1 acceptance** is inferred. The fixture must still author a real `HOLD` interlock mode and cutoff; without them the default incompatible fresh-write outcome is explicit **contention with no actuation**.
+**Gate 1 candidate now supplies paper dispositions** for effective command ticks, post-world observation publication, same-tick Hold/Cue and prior-impact cutoffs, duplicate/stale handling and pause. They are incorporated conditionally below; **no execution or formal Gate 1 acceptance** is inferred. The fixture now proposes an explicit `HOLD` latch and noninterruptible commitment frontier below, while leaving actual timing magnitudes and design acceptance open. If these physical predicates cannot be accepted, the default incompatible fresh-write outcome remains **contention with no actuation**, not Player priority.
 
 ## 5A. Gate 1 alignment — candidate preconditions and decision examples
 
 The Gate 1 reconciliation merged after the original fixture; it **does not** silently declare this mechanism accepted. To instantiate its conflict policy, this fixture must explicitly provide the following **authored, validated physical facts**, not source-class priority scores:
 
-- `holdInterlockEnabled`: a genuine physical constraint of this fictional mechanism that can block a *new, uncommitted* Cue actuation while legal; it never affects unrelated world objects or already matured damage.
-- `holdInterruptibleModes`: the named motion states in which Hold can arrest motion, with a declared last-effective completed boundary per pending hazard. Any `overtravel` whose physical consequence has already matured remains historical.
-- `exclusiveControlFacet`: the actual state/resource the Cue and Hold may contest. A legitimate pre-existing exclusive physical claim, if authored into completed state, has precedence; a fresh Actor/Player label never acquires one by mere declaration.
-- `cueInterlockDisposition`: how the Show interprets `CUE_SUPPRESSED_BY_INTERLOCK`, `CUE_CONFLICT` or `CUE_APPLIED`, with a finite authored Beat fallback. The renderer must portray **actual** physical outcome, not automatically animate every `CueDue` as success.
-- `holdDurationTicks`, `readTicks[DESK]`, `inspectTicks[RIG]` and movement costs: positive, named complete-step durations for newly acquired evidence/world actions. No UI shortcut may reveal pending inspections or newly posted Production revisions for free.
+- `holdInterlockEnabled`: a genuine physical safety latch for the fictional chandelier that can (a) interrupt specified **already moving** modes, or (b) block a *new, uncommitted* Cue actuation while legal. It never changes unrelated world objects or already committed scenery impacts.
+- `holdInterruptibleModes = {rest, early-small, controlled-sway}` for this fixture. `overtravel` is noninterruptible **as soon as the autonomous threshold step commits its pending impact**, even if trim disturbance is not displayed until the following step. Preserve the cutoff at that commitment, not at visual impact.
+- `exclusiveControlFacet = chandelier.motion-control`: the one physical actuation facet. `CueRequest(EARLY_FLOURISH)` or the later normal Cue requests drive activation on this facet; HOLD requests the physical safety latch on the **same facet**, even though the implementation may store separate drive/latch fields. An already driving motor is a committed ongoing motion, **not** automatically an uninterruptible reservation: the authored safety latch may interrupt `early-small`/`controlled-sway`. Any genuinely exclusive pre-existing reservation still follows Gate 1's rules; one cannot arise merely from a Cue's issuer label. Natural vibration is an intrinsic World progression, **not** a competing Actor/Show write.
+- `cueInterlockDisposition`: how the Show interprets `CUE_SUPPRESSED_BY_INTERLOCK`, `CUE_CONFLICT` or `CUE_APPLIED` separately from a `beatDisposition` with a finite authored Beat fallback. The renderer must portray **actual** physical outcome, not automatically animate every `CueDue` as success.
+- `operateDurationTicks[HOLD]` (the sole Hold duration; older `holdTicks`/`holdDurationTicks` refer to this value), `readTicks[DESK]`, `inspectTicks[RIG]` and movement costs: positive, named complete-step durations for newly acquired evidence/world actions. No UI shortcut may reveal pending inspections or newly posted Production revisions for free.
 
 **Paper example I — legitimate A, premature Hold:** at `S[t]`, a lawful Hold job is mature and a new approved early-flourish Cue is due. If `holdInterlockEnabled` and all reach/ability/cutoff conditions hold, arbitration emits exactly one `HOLD_APPLIED` world result and `CUE_SUPPRESSED_BY_INTERLOCK`; Show follows its missed/held path. No scene damage. Reversing command enumeration changes nothing. Without legal interlock or prior claim, the two incompatible fresh writers **conflict**; do not silently credit a successful Hold.
 
@@ -131,18 +134,19 @@ The Gate 1 reconciliation merged after the original fixture; it **does not** sil
 
 ## 6. Timing, reachability and parameter ledger
 
-All durations are named **authoring parameters** measured in authoritative **simulation ticks**, not real-time frame counts. No numerical defaults or balance targets are fixed at Gate 2.
+All durations are named **authoring parameters** measured in authoritative **simulation ticks**, not real-time frame counts. No numerical balance targets are fixed at Gate 2. **Scheduling policy for this toy:** one exclusive active timed Player job (Move, newly acquiring Read/Inspect, or Hold). Starting another while one is in progress returns `BUSY_PLAYER`, does not queue or preempt, and does not shorten the original job. `Refrain` is a no-op choice, not a second timed job or cancellation; passive time passes. A completed job frees the slot at its published boundary. Pause freezes its remaining active steps. No movement during Inspect, no off-station queued Hold, and no overlapping costs. A future overlap/cancellation model requires a separate accepted test.
 
 | Parameter | Units | Purpose |
 | --- | --- | --- |
 | `travelTicks[from,to]` | ticks/edge | time to move between the above station graph nodes |
 | `inspectTicks[RIG]` | ticks | duration of local inspection; evidence acquired at a resolved tick boundary |
 | `readTicks[DESK]` | ticks | cost to obtain an effective posted revision; rereading known data may be free |
-| `holdTicks` | ticks | time to request and complete a valid Hold action |
-| `symptomTick` | tick | first common early-motion observation in A and B |
+| `operateDurationTicks[HOLD]` | ticks | **canonical sole** Hold duration (previous names `holdTicks` and `holdDurationTicks` are historical aliases only) |
+| `firstSymptomKnownBoundary` | completed-state boundary | first common early-motion symptom available to the Player in A and B (replaces vague `symptomTick` for decision-cost calculations) |
 | `effectiveCueTick` | tick | when authorized movement may be requested in A |
 | `lastEffectiveHoldBoundary` | completed-state boundary `S[L]` | latest boundary by which the **resolved** Hold must be engaged to prevent the authored disturbance; not merely the last tick when clicking is allowed |
-| `trimDisturbanceTick` | tick | B consequence boundary if not effectively held |
+| `faultThresholdStep` | active step | B's autonomous limit crossing step without a Hold; **impact commits at the end of P5 of this step** and is due in P2 of the next active step |
+| `trimDisturbanceTick` | active step | B's impact maturation step `faultThresholdStep + 1` when not prevented; not the last moment at which Hold may be newly applied |
 | `beatDeadlineTick` | tick | time when unresolved flourish receives a finite Show disposition |
 | `observationFreshnessTicks` | ticks | optional expiry/staleness for readings that can change |
 
@@ -153,7 +157,7 @@ firstSymptomKnownBoundary
  + travelTicksToDiscriminator(P)
  + evidenceAcquisitionTicks(P)
  + travelTicksToHold(P)
- + holdTicks
+ + operateDurationTicks[HOLD]
  <= lastEffectiveHoldBoundary
 ```
 
