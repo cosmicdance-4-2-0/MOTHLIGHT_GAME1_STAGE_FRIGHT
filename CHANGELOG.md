@@ -12,7 +12,7 @@ This log tracks **recorded development integrations** rather than public release
 
 **Purpose:** publish a proposed, preregisterable **Stage 0 Gate 3 judgment-trial protocol** for the first chandelier mechanism. It specifies research questions and failure criteria *before* later Stage 2 participants, rather than asserting the game is already playable or fun.
 
-**Added:** [Gate 3 research protocol](docs/design/STAGE0_GATE3_JUDGMENT_TRIAL_PROTOCOL.md) with A/B first-exposure allocation, a held-out authorization/safety transfer case, four legitimate scripted baselines, accessible evidence and response timing, separate physical/Beat/reasoning/experience measures, pilot-versus-confirmatory preregistration, consent/privacy safeguards, technical/experimental invalidation and sixteen **unexecuted** paper checks T3-01–T3-16.
+**Added:** [Gate 3 research protocol](docs/design/STAGE0_GATE3_JUDGMENT_TRIAL_PROTOCOL.md) with A/B first-exposure allocation, a proposed pair of complementary held-out authorization/safety transfer cases with bounded inference, four legitimate scripted baselines, accessible evidence and response timing, separate prospective behavior versus retrospective explanations, explicit unclassified nonaction, A/B-limited H3-02 inference, physical/Beat/reasoning/experience measures, pilot-versus-confirmatory preregistration, consent/privacy safeguards, technical/experimental invalidation and twenty **unexecuted** paper checks T3-01–T3-20.
 
 **Affected paths:** `docs/design/STAGE0_GATE3_JUDGMENT_TRIAL_PROTOCOL.md`, `docs/changes/SF-0007.md`, `CHANGELOG.md`, `version.json`.
 
