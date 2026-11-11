@@ -1,7 +1,7 @@
 # Stage 0 Gate 2 — The False-Alarm Chandelier: Mechanism and Evidence Fixture
 
 **Integrator/designer:** Mothlight — The Invisible Stagehand  
-**Status:** **provisional Gate 2 fixture, post-merge alignment candidate**, not a ratified engine contract, playable game, or evaluated trial  
+**Status:** **integrated provisional Gate 2 design documentation** (PRs #19 and #21 merged); not a ratified engine contract, playable game, or evaluated trial  
 **Frozen planning source:** `107ae2b446405d225feac01595e9ead08d679bde` (`0.0.2.4/SF-0004`)  
 **Predecessor:** [selected judgment experiment](STAGE2_JUDGMENT_EXPERIMENT.md), reconciliation R-03/R-04/R-08/R-16  
 **Source alignment:** [Gate 1 independent-review intake](../reviews/STAGE0_GATE1_REVIEW_INTAKE.md) (merged PR #18) and [Mothlight's Gate 1 reconciliation candidate](../reviews/STAGE0_GATE1_RECONCILIATION_PROPOSAL.md) (merged PR #20), originally authored against frozen SF-0004. PR #19 merged between those PRs without updating this fixture's speculative tie/Inspect wording. The Gate 1 document is still labeled a **proposal**, not an adopted executable contract; this amendment records the specific **candidate** mechanical consequences rather than asserting acceptance.
