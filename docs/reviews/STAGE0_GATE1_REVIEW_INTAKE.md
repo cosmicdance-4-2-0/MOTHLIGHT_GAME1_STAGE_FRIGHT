@@ -4,7 +4,7 @@
 **Integrator:** Mothlight — The Invisible Stagehand  
 **Immutable game source:** 107ae2b446405d225feac01595e9ead08d679bde, development state 0.0.2.4/SF-0004  
 **Common assignment:** [Authoritative Simulation Contract handoff](STAGE0_GATE1_AUTHORITY_HANDOFF.md)  
-**State:** all **six source-pinned independent Gate 1 first passes received**. Original reports are preserved on their individual agent branches. **Mothlight's candidate reconciliation is recorded in [draft PR #20](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/pull/20); no game contract has yet been ratified or tested.**
+**State:** all **six source-pinned independent Gate 1 first passes received**. Original reports are preserved on their individual agent branches. **Mothlight's candidate reconciliation was merged as a source-pinned *proposal* in [PR #20](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/pull/20); no executable game contract has yet been ratified or tested.**
 
 ## Independent review ledger
 
@@ -31,7 +31,7 @@
 - [x] Common assignment source-pinned to SF-0004
 - [x] Six named review issues created and linked (**invitations only; no agents automatically started**)
 - [x] Six independent first-pass reports submitted and preserved (**receipt verified, not adopted**)
-- [x] Mothlight's source-pinned **candidate reconciliation** and exact phase/tie proposal published in [draft PR #20](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/pull/20); **not yet accepted or integrated**
+- [x] Mothlight's source-pinned **candidate reconciliation** and exact phase/tie proposal merged as a proposal in [PR #20](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/pull/20); **integrated as documentation, not accepted as executable authority**
 - [ ] Gate 1 evidence accepted and integrated
 
 This tracker belongs to the **dispatch proposal**, not the current ratified gameplay specification.

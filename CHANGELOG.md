@@ -8,6 +8,20 @@ This log tracks **recorded development integrations** rather than public release
 - **Art status correction:** PR #2 merged at `3e6386f258c73141b35e109a3c1b510e5b2e30b9`; its derivative/provenance are present, while original full-resolution PNGs remain outside this repository. SF-0004 does not claim that PR #2 had a separate version record.
 - **Gameplay tests:** no Stage 2 player trials or simulation implementation is authorized by this record.
 
+## [0.0.2.5/SF-0005] — 2026-11-11
+
+**Purpose:** reconcile a safely merged but incompletely versioned Stage 0 design-document stack, and align the provisional Gate 2 chandelier fixture with the independently authored Gate 1 authority proposal.
+
+**Historical integration receipt (retrospective and explicit):** PR #18 (six individual Gate 1 reports), PR #19 (provisional chandelier fixture), and PR #20 (Mothlight's candidate Gate 1 transition) merged sequentially as `0b388846`, `6ff94b23`, and `514ce104` without updating `version.json`. Their original merge commits and dates **are not rewritten**, and this entry does **not** pretend that any of them had a ChangeID at merge time. SF-0005 is a **single forward catch-up record**, not one fabricated record for each prior PR. This missed per-integration ledger step is documented as an exception to the normal policy.
+
+**Changed in this proposed integration:** Gate 2's physical Hold latch and shared motion-control facet; exact autonomous fault threshold-to-committed-impact boundary; reachable **post-symptom** Hold in A/B; separate Cue and finite Beat outcomes; one active timed Player job; costed evidence timing, completed-boundary feasibility inequalities and seven additional **unexecuted** causal traces (V-01–V-07); Gate 1 Bell acknowledgment surviving same-step incapacitation; canonical timing names; corrected four-station description; roadmap and intake distinction between merged proposals and accepted executable contracts. An owner-relayed independent VeNerVRA audit prompted these corrections; the change record preserves Ven's findings and Mothlight's separate dispositions.
+
+**Affected paths:** `docs/design/STAGE0_GATE2_CHANDELIER_MECHANISM.md`, `docs/reviews/STAGE0_GATE1_RECONCILIATION_PROPOSAL.md`, `docs/reviews/STAGE0_GATE1_REVIEW_INTAKE.md`, `docs/ROADMAP.md`, `version.json`, `CHANGELOG.md`, `docs/changes/SF-0005.md`.
+
+**Compatibility:** design documentation only; no actual game physics, commands, API, saves, visual assets or runtime changes. `Revision=2` remains unchanged: Gate 1 and Gate 2 executable/adopted contracts are still open. `Build=5` records only this accepted forward documentation integration **if the proposed PR is merged**. No public release and no human or simulation result claimed.
+
+**Detailed change record:** [SF-0005](docs/changes/SF-0005.md).
+
 ## [0.0.2.4/SF-0004] — 2026-11-09
 
 **Purpose:** record the owner-directed six-review reconciliation and smaller first gameplay experiment.
