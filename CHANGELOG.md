@@ -8,6 +8,20 @@ This log tracks **recorded development integrations** rather than public release
 - **Art status correction:** PR #2 merged at `3e6386f258c73141b35e109a3c1b510e5b2e30b9`; its derivative/provenance are present, while original full-resolution PNGs remain outside this repository. SF-0004 does not claim that PR #2 had a separate version record.
 - **Gameplay tests:** no Stage 2 player trials or simulation implementation is authorized by this record.
 
+## [0.0.2.6/SF-0006] — 2026-11-11
+
+**Purpose:** resolve three non-blocking, owner-relayed Ven review observations following the merged Gate 1/Gate 2 alignment in PR #21. **Design and review documentation only**; no gameplay implementation or Stage 0 gate ratification.
+
+**Changed:** explicit Show-owned scheduled-Cue suppression after a terminally blocked Beat (no fabricated World Cue request/receipt); correct Stage 0 Gate 3 protocol versus Stage 2 participant trial versus Stage 3 dramatic Play terms; remove unselected two-participant assumption. Retain the original audit's independent attribution.
+
+**Previous integration exception:** PR #21 merged as an explicit owner executive override after browser-smoke failed to install Ubuntu system dependencies due to apt mirror DNS failures. Typecheck, unit test, build and version validation passed; browser smoke was **not executed**, and this record does not invent a successful browser result or claim a globally confirmed outage. No prior commit was rewritten.
+
+**Affected paths:** `docs/design/STAGE0_GATE2_CHANDELIER_MECHANISM.md`, `version.json`, `CHANGELOG.md`, `docs/changes/SF-0006.md`.
+
+**Compatibility:** no runtime/API, art, save or physical mechanism change; Revision stays 2, Build increments to 6 **only upon integration**.
+
+**Detailed change record:** [SF-0006](docs/changes/SF-0006.md).
+
 ## [0.0.2.5/SF-0005] — 2026-11-11
 
 **Purpose:** reconcile a safely merged but incompletely versioned Stage 0 design-document stack, and align the provisional Gate 2 chandelier fixture with the independently authored Gate 1 authority proposal.
