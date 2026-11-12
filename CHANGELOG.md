@@ -8,6 +8,18 @@ This log tracks **recorded development integrations** rather than public release
 - **Art status correction:** PR #2 merged at `3e6386f258c73141b35e109a3c1b510e5b2e30b9`; its derivative/provenance are present, while original full-resolution PNGs remain outside this repository. SF-0004 does not claim that PR #2 had a separate version record.
 - **Gameplay tests:** no Stage 2 player trials or simulation implementation is authorized by this record.
 
+## [0.0.2.8/SF-0008] — 2026-11-11
+
+**Purpose:** propose a source-pinned **Stage 0 Gate 4 design closeout packet** after integrated Gate 1 authority, Gate 2 chandelier and Gate 3 trial-protocol proposals. A documentation merge **does not** indicate owner adoption of behavioral contracts, Stage 0 exit, an executed gameplay test or evidence of fun.
+
+**Added:** [Gate 4 closeout proposal](docs/reviews/STAGE0_GATE4_CLOSEOUT_PROPOSAL.md) with a bounded one-Room/one-mechanism/one-Beat first-slice blueprint; suggested Gate 1–3 design adoption decisions; full C00–C12 responsibility and deferral mapping; 59 **unexecuted** paper case labels across G1/F2/V/T3; named Stage 1 visual and Stage 2 implementation/pilot checkpoints; provenance, counterexamples and explicit owner decision gate.
+
+**Scope:** documentation only. No changes to the roadmap's Stage 0 checkboxes, C00–C12 canonical executable status, prior author/reviewer records, gameplay code, art, CI or experiment participants.
+
+**Affected paths:** `docs/reviews/STAGE0_GATE4_CLOSEOUT_PROPOSAL.md`, `docs/changes/SF-0008.md`, `CHANGELOG.md`, `version.json`. The Revision remains 2; proposed Build 8 counts only if this distinct documentation integration is merged.
+
+**Detailed change record:** [SF-0008](docs/changes/SF-0008.md).
+
 ## [0.0.2.7/SF-0007] — 2026-11-11
 
 **Purpose:** publish a proposed, preregisterable **Stage 0 Gate 3 judgment-trial protocol** for the first chandelier mechanism. It specifies research questions and failure criteria *before* later Stage 2 participants, rather than asserting the game is already playable or fun.
