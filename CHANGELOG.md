@@ -14,7 +14,7 @@ This log tracks **recorded development integrations** rather than public release
 
 **Added:** [Gate 4 closeout proposal](docs/reviews/STAGE0_GATE4_CLOSEOUT_PROPOSAL.md) with a bounded one-Room/one-mechanism/one-Beat first-slice blueprint; suggested Gate 1–3 design adoption decisions; full C00–C12 responsibility and deferral mapping; 59 **unexecuted** paper case labels across G1/F2/V/T3; named Stage 1 visual and Stage 2 implementation/pilot checkpoints; provenance, counterexamples and explicit owner decision gate.
 
-**Scope:** documentation only. No changes to the roadmap's Stage 0 checkboxes, C00–C12 canonical executable status, prior author/reviewer records, gameplay code, art, CI or experiment participants.
+**Scope:** documentation only. A later Mothlight author-side review surfaced **two still-open Gate 3 measurement details** (distinguish expired opportunity from never-feasible Hold, and exhaustive evidence acquisition from inspect-all-then-forced-Hold); Gate 4 records these as explicit owner acceptance/defer choices, **not** resolved experiment design. No changes to the roadmap's Stage 0 checkboxes, C00–C12 canonical executable status, prior author/reviewer records, gameplay code, art, CI or experiment participants.
 
 **Affected paths:** `docs/reviews/STAGE0_GATE4_CLOSEOUT_PROPOSAL.md`, `docs/changes/SF-0008.md`, `CHANGELOG.md`, `version.json`. The Revision remains 2; proposed Build 8 counts only if this distinct documentation integration is merged.
 
