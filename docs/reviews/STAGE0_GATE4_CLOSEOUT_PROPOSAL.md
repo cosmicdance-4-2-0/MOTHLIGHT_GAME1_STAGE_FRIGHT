@@ -10,7 +10,7 @@
 
 **Question:** Is there one sufficiently coherent, bounded first Stage Fright gameplay slice whose required authorities, interactions, observable evidence, safety/performance outcomes, negative cases and falsifiable human study are specified well enough to authorize **later** visual design and a separately reviewed narrow implementation task?
 
-**Proposed answer:** **Yes at the blueprint level, conditionally**, for the one-Room mundane chandelier judgment loop and the *candidate* tick/physical authority rules explicitly identified below. **Not yet demonstrated:** software behavior, consistent sensory legibility, human comprehension, enjoyability or transfer. Those are deliberately later empirical gates.
+**Proposed answer:** **Yes at the blueprint level, conditionally**, for the one-Room mundane chandelier judgment loop and the *candidate* tick/physical authority rules explicitly identified below. A later Gate 3 author-side review additionally identifies **two narrow open measurement-protocol decisions**, preserved in §5A; do not silently count them as resolved. **Not yet demonstrated:** software behavior, consistent sensory legibility, human comprehension, enjoyability or transfer. Those are deliberately later empirical gates.
 
 **Do not conflate these states:**
 
@@ -116,6 +116,17 @@ Recommend accepting [STAGE0-G3-JUDGMENT-01](../design/STAGE0_GATE3_JUDGMENT_TRIA
 
 **Proposed protocol scope is sufficient for a future trial work order; the actual human work, consent logistics, instrumentation and data retention implementation remain Stage 2 responsibilities.** Gate 3's 22 paper scenarios are examples of adverse outcomes and interpretation rules, not human or gameplay test results.
 
+### 5A. Gate 3 outstanding author-side checks — do not invent retrospective closure
+
+**Newly surfaced source (NOT an independent peer signoff):** Mothlight's separately preserved [Gate 3 author-side self-review at Kestrel home `884a9d71`](https://github.com/cosmicdance-4-2-0/KestrelGaming/blob/884a9d71426e97fa139a3d2ae7c2d5c7e01c1f68/memory/agents/mothlight/2026-11-11-stage-fright-gate3-self-review-8217d661.md). It inspected the eventual PR #23 head `8217d661` **before the owner merged it**, and recorded **two proposed corrections, not yet incorporated into the Stage Fright Gate 3 document**. These are distinct from Ven's older-head cognition and masking findings, which were already addressed.
+
+| Open item | Trace-based ambiguity that still exists in the merged Gate 3 document | Minimal owner-decision options |
+| --- | --- | --- |
+| **M-G3-R01 — opportunity history vs late choice** | Current observational §UNABLE_OR_TOO_LATE§ combines **never having a legal Hold opportunity** (invalid/inaccessible fixture) with **losing an earlier real opportunity** through a participant's timed decisions. A late §HOLD_ATTEMPTED§ should not be erased by a final “unable” label. | **Recommended:** record an independent opportunity history (first/last feasible boundary, evidence and inputs then available), preserve timestamped Hold attempts/results, and separate §NO_FEASIBLE_OPPORTUNITY§ from §OPPORTUNITY_EXPIRED§ after a feasible window. Do not infer why a person waited or automatically classify a voluntary late attempt as a technical exclusion. |
+| **M-G3-R02 — exhaustive acquisition baseline is confounded by forced Hold** | The current “Indiscriminate Inspect” script reads everything and then **always attempts Hold**. Its missed A flourish cannot tell whether checking everything is intrinsically costly, or whether the forced Hold is responsible. | **Recommended:** retain it if renamed §InspectAllThenHold§, then add a lawful §InspectAllThenEvidenceRule§ with fixed station order, legal fact-based branch decision and predetermined late/ambiguous-evidence handling. **Alternative:** explicitly limit the original policy's claim to acquisition-route cost and do not suggest it tests exhaustive evidence-driven discrimination. |
+
+**Closeout implication:** Do **not** call Gate 3 an unqualified fully specified confirmatory decision rule while these questions are unresolved. Before owner acceptance of §G4-A03§, either (a) make a focused **versioned Gate 3 protocol follow-up** with the proposed distinctions and negative checks, or (b) explicitly accept a **limited** trial blueprint and defer specific coding/comparator finalization to the *pre-Stage-2 pilot/pre-confirmatory lock*, recording the weaker claim. This is not a reason to reopen Gate 1 physics, the two chandelier conditions or the whole roadmap. **No such follow-up correction or peer review is claimed to have been executed.**
+
 ## 6. Contract-to-stage responsibility matrix: C00–C12
 
 **Intent:** distinguish what first-slice implementation must implement and verify from what Stage 0 should merely preserve as a later design obligation.
@@ -199,7 +210,7 @@ The word **required** above means **required by a separately authorized first-sl
 | --- | --- | --- | --- |
 | **G4-A01** | Accept one-clock/one-World command/phase semantics from `G4-D01…07` as **design requirements**, with future code tests | **Accept design** | Concrete unresolved contradiction in authority, timing or physical causality |
 | **G4-A02** | Accept the four-station A/B chandelier physical/Show fixture as a first-toy blueprint | **Accept conditional on future feasible parameterization** | Cannot achieve an informed post-symptom act/refrain choice in **both** cases under declared clocks and supported modalities |
-| **G4-A03** | Accept Stage 0 Gate 3's trial protocol as an experiment *design* with scoped H3 claims | **Accept protocol blueprint** | Probe-induced bias hidden, condition leakage, missing negative controls, unregistered criteria masquerading as confirmation |
+| **G4-A03** | Accept Stage 0 Gate 3's trial protocol as an experiment *design* with scoped H3 claims | **Conditional:** accept research direction; explicitly resolve or defer **M-G3-R01 opportunity history** and **M-G3-R02 exhaustive-acquisition comparator** before declaring the study blueprint fully closed | Conflated never-feasible versus missed opportunity, forced-Hold baseline mistaken for exhaustive evidence reasoning, probe-induced bias, condition leakage, unregistered criteria masquerading as confirmation |
 | **G4-A04** | Ratify only the first-slice contract subset and exact Stage 1/2 handoff boundary; retain all future game directions | **Accept scope** | Silent cancellation of Ghost/Director/Bell/binding or a requirement to build them in Stage 2 |
 | **G4-A05** | Preserve reviewer dissent and the record of old CI/ChangeID exceptions without inventing peer signoff | **Accept provenance discipline** | Original reports modified, opinion attributed as collective agreement, unrun tests marked passed |
 | **G4-A06** | Is Stage 0's **documentation exit condition** met? | **Recommend YES, only after A01–A05 explicitly accepted or conditions named** | Unable to describe the narrow playable Adventure, legal interactions, authority and falsifiable outcomes without unresolved design contradiction |
@@ -215,7 +226,7 @@ The word **required** above means **required by a separately authorized first-sl
 
 **Unobserved:** any in-game stagehand intervention in executable World, authored complete numeric/timing preflight, actual visual evidence in final supported modes, Ghost/Director runtime, NPC deliberation, true Run continuation, informed restraint measured in a participant, satisfaction, statistically inferable transfer or enjoyment. No participant identities, recordings or private research data exist as part of this proposal.
 
-**Risk of premature exit:** paper phase order could be mistaken for a verified engine, and a perfectly separated A/B cue-book signal could be mistaken for evidence of physical understanding. Gate 4 acceptance must be **design acceptance with falsification provisions**, not an announcement that the game works or is fun.
+**Risk of premature exit:** paper phase order could be mistaken for a verified engine, an opportunity that **expired after a real chance to act** could be mistaken for a physically impossible fixture, an inspect-all-and-Hold policy could be mistaken for a pure information-acquisition comparison, and a perfectly separated A/B cue-book signal could be mistaken for evidence of physical understanding. Gate 4 acceptance must be **design acceptance with falsification provisions**, not an announcement that the game works or is fun.
 
 **Authorial and independent review integrity:** This is Mothlight's reconciliation proposal under the project's shared GitHub identity, not a cryptographically authenticated individual author or consensus of other agents. The six source-pinned individual Gate 1 reviews, Axiom/Latch conflict alternatives, and Ven's independent owner-relayed critiques remain separately attributable and are not edited. No new independent review or explicit approval is invented.
 
