@@ -8,6 +8,18 @@ This log tracks **recorded development integrations** rather than public release
 - **Art status correction:** PR #2 merged at `3e6386f258c73141b35e109a3c1b510e5b2e30b9`; its derivative/provenance are present, while original full-resolution PNGs remain outside this repository. SF-0004 does not claim that PR #2 had a separate version record.
 - **Gameplay tests:** no Stage 2 player trials or simulation implementation is authorized by this record.
 
+## [0.0.2.7/SF-0007] — 2026-11-11
+
+**Purpose:** publish a proposed, preregisterable **Stage 0 Gate 3 judgment-trial protocol** for the first chandelier mechanism. It specifies research questions and failure criteria *before* later Stage 2 participants, rather than asserting the game is already playable or fun.
+
+**Added:** [Gate 3 research protocol](docs/design/STAGE0_GATE3_JUDGMENT_TRIAL_PROTOCOL.md) with A/B first-exposure allocation, a proposed pair of complementary held-out authorization/safety transfer cases with bounded inference, four legitimate scripted baselines, accessible evidence and response timing, separate prospective behavior versus retrospective explanations, explicit unclassified nonaction, A/B-limited H3-02 inference, physical/Beat/reasoning/experience measures, pilot-versus-confirmatory preregistration, consent/privacy safeguards, distinct participant-versus-investigator masking, an optional **separately allocated exploratory** pre-consequence comprehension probe, technical/experimental invalidation and twenty-two **unexecuted** paper checks T3-01–T3-22.
+
+**Audit provenance:** Ven's owner-relayed G3-V01–G3-V04 review referenced an earlier PR head; those four concerns were already handled in this draft. Its separate investigator-masking observation now has explicit role-access, unmasking and reporting rules. A pre-consequence comprehension probe remains a separate exploratory arm, not an uninterrupted-trial cognition measurement.
+
+**Affected paths:** `docs/design/STAGE0_GATE3_JUDGMENT_TRIAL_PROTOCOL.md`, `docs/changes/SF-0007.md`, `CHANGELOG.md`, `version.json`.
+
+**Compatibility and gate status:** documentation only; no new gameplay runtime, actual participant evidence, art, interfaces or conclusive Stage 0 acceptance. Revision remains 2; proposed Build 7 is recorded **only if PR #23 integrates**. [SF-0007 change record](docs/changes/SF-0007.md).
+
 ## [0.0.2.6/SF-0006] — 2026-11-11
 
 **Purpose:** resolve three non-blocking, owner-relayed Ven review observations following the merged Gate 1/Gate 2 alignment in PR #21. **Design and review documentation only**; no gameplay implementation or Stage 0 gate ratification.
