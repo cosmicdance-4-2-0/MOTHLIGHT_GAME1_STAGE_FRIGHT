@@ -2,7 +2,7 @@
 
 This is a game repository, not an agent identity or memory repository.
 
-- Follow the explicit task scope. The project remains in **Stage 0 / Version 0 documentation**. The R0 infrastructure closure does **not** authorize gameplay work, art production or public release plans.
+- Follow the explicit task scope. **Stage 0 is provisionally closed as a design gate (SF-0009)**; [Stage 1 visual exploration](docs/reviews/STAGE1_VISUAL_WORK_ORDER.md) is authorized as a bounded study. Neither R0 nor this stage transition authorizes Stage 2 gameplay implementation, full production art, participant trials or a public release.
 - Keep changes minimal, reviewable and honestly verified. Never claim a build or test that has not run.
 - Do not introduce hidden telemetry, Easter eggs, external effects or secrets.
 - Treat previously accepted interfaces as contracts; propose compatibility changes before modifying them.
