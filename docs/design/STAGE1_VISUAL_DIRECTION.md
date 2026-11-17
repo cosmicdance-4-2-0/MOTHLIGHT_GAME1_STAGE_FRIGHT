@@ -1,6 +1,6 @@
 # Stage Fright — Stage 1 Visual Exploration
 
-**Status:** planned art decision process, **not yet an art-style selection or asset-creation assignment**.
+**Status (SF-0009):** Stage 1 **visual comparison authorized** by the [owner decision](../reviews/STAGE0_EXIT_DECISION.md) and [bounded work order](../reviews/STAGE1_VISUAL_WORK_ORDER.md). No art style is selected; this authorizes comparative studies and test assets, **not a production-art pipeline**.
 
 ## Starting hypothesis
 
@@ -75,4 +75,4 @@ Stage 1 does **not** require full animation sets, a complete theater, a content 
 
 Use the [Stage 2 judgment fixture](STAGE2_JUDGMENT_EXPERIMENT.md) to identify which mechanism states, cue/revision evidence and interventions must be legible. Compare A and B using the same Room/Shot, geometry, evidence timing and affordances at actual play size, including supported sensory/input alternatives. Early static or timed studies can assess recognition and atmosphere; they cannot prove embodied hazard response or fun.
 
-Keep two gates independent: fixed-command simulation parity, and human perceptual usability. Different artwork may change human decisions; equal traces do not certify usable clues. Measure authoring/revision effort as well as recognition and atmosphere. Reopen the visual choice if both candidates fail; preserve a provisional direction through Stage 2 instead of producing a full pipeline first. Required semantic warnings cannot disappear behind an Art Pack, occluder or reduced-motion setting. No style selection or art production is authorized by this documentation update.
+Keep two gates independent: fixed-command simulation parity, and human perceptual usability. Different artwork may change human decisions; equal traces do not certify usable clues. Measure authoring/revision effort as well as recognition and atmosphere. Reopen the visual choice if both candidates fail; preserve a provisional direction through Stage 2 instead of producing a full pipeline first. Required semantic warnings cannot disappear behind an Art Pack, occluder or reduced-motion setting. The historical SF-0004 documentation update did not authorize style selection or art production. Subsequent Stage 1 authority is limited by [STAGE1-VISUAL-01](../reviews/STAGE1_VISUAL_WORK_ORDER.md).

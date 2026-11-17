@@ -13,7 +13,7 @@ Stage Fright is a planned modular, replayable, single-player-first theatrical su
 
 ## Status
 
-**R0 development environment verified. Six-review design reconciliation is recorded; Stage 0 remains open.** Planning requirements and the earliest judgment experiment are selected; executable contracts and gameplay remain unimplemented. No ghost AI, cast behavior, damage simulation, episode system, or playable game loop has been implemented.
+**R0 development environment verified. Stage 0 is provisionally closed at the design level; Stage 1 visual exploration is authorized (SF-0009).** The [owner decision](docs/reviews/STAGE0_EXIT_DECISION.md) and [first Stage 1 work order](docs/reviews/STAGE1_VISUAL_WORK_ORDER.md) define the boundary. Executable contracts and gameplay remain unimplemented. No ghost AI, cast behavior, damage simulation, episode system, or playable game loop exists.
 
 Start with the [six-review reconciliation](docs/reviews/STAGE0_RECONCILIATION.md) and [Stage 2 judgment experiment](docs/design/STAGE2_JUDGMENT_EXPERIMENT.md).
 
@@ -39,7 +39,7 @@ For now, `npm run dev` is intended to display only a rendering smoke screen.
 - Game rules must remain testable headlessly; visual physics must not silently decide authoritative damage.
 - Content should compose through explicit validated interfaces rather than hidden global state.
 - Designs and balancing values are proposals until tested and accepted.
-- Do not implement gameplay systems until the relevant Stage 0 design contracts are reviewed and authorized.
+- Do not implement gameplay systems without a separate, reviewed Stage 2 work order and the affected contract/test approvals. Stage 1 authorization covers visual studies, not simulation code.
 
 The project is in early design. Licensing and redistribution terms have not yet been selected.
 

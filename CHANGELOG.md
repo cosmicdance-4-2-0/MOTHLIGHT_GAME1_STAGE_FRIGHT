@@ -4,9 +4,21 @@ This log tracks **recorded development integrations** rather than public release
 
 ## Unreleased / review pending
 
-- **Stage 0 remains open:** reconciliation planning decisions are recorded below; exact executable contracts and focused reviewer follow-up remain open.
+- **Current stage:** Stage 0 documentation/design provisionally closed at SF-0009; Stage 1 visual comparison authorized. Exact executable contracts, conditions and later reviewer follow-up remain open.
 - **Art status correction:** PR #2 merged at `3e6386f258c73141b35e109a3c1b510e5b2e30b9`; its derivative/provenance are present, while original full-resolution PNGs remain outside this repository. SF-0004 does not claim that PR #2 had a separate version record.
 - **Gameplay tests:** no Stage 2 player trials or simulation implementation is authorized by this record.
+
+## [0.0.2.9/SF-0009] — 2026-11-16
+
+**Purpose:** record the owner's **provisional Stage 0 design exit** and explicit authorization to start a **bounded Stage 1 visual comparison**, after [PR #24](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/pull/24) integrated the Gate 4 decision packet as SF-0008.
+
+**Added:** [Stage 0 exit decision](docs/reviews/STAGE0_EXIT_DECISION.md) and [Stage 1 visual work order](docs/reviews/STAGE1_VISUAL_WORK_ORDER.md). Updated roadmap, repository entrypoints and visual-study status to distinguish design acceptance from runnable-contract approval and visual investigation from art production.
+
+**Conditions retained:** A02 timing/reachable accessible evidence; A03 opportunity history and exhaustive-inspection comparator before their affected study frontiers; all 59 paper cases remain unexecuted. Reopen the smallest falsified design decision with a new change record. No Stage 2 implementation, participants, complete Art Pack pipeline, or release authorized.
+
+**Affected paths:** `AGENTS.md`, `README.md`, `docs/ROADMAP.md`, `docs/design/STAGE1_VISUAL_DIRECTION.md`, `docs/reviews/STAGE0_EXIT_DECISION.md`, `docs/reviews/STAGE1_VISUAL_WORK_ORDER.md`, `docs/changes/SF-0009.md`, `CHANGELOG.md`, `version.json`.
+
+**Compatibility:** documentation/stage decision only; no runtime interfaces, source, art or dependency change. Revision stays 2; Build 9 records this distinct integration when merged. [SF-0009 change record](docs/changes/SF-0009.md).
 
 ## [0.0.2.8/SF-0008] — 2026-11-11
 
