@@ -21,16 +21,18 @@ This repository has TypeScript/npm workspaces, a separate headless package, Pixi
 - [x] Publish a source-pinned independent [six-agent review handoff](reviews/STAGE0_SIX_AGENT_HANDOFF.md).
 - [x] Receive and preserve six independently authored first-pass reports; maintain [review intake](reviews/STAGE0_REVIEW_INTAKE.md). **Collection complete; original reports and dissent remain preserved.**
 - [x] Record [six-review reconciliation](reviews/STAGE0_RECONCILIATION.md) with source pins, Adopt / Reject / Defer / Experiment dispositions, dissent and focused follow-up questions. Planning adoption does not ratify executable contracts.
-- [ ] Close the reconciliation's remaining gates: [Gate 1 authority proposal](reviews/STAGE0_GATE1_RECONCILIATION_PROPOSAL.md) and [Gate 2 chandelier fixture](design/STAGE0_GATE2_CHANDELIER_MECHANISM.md) were merged as **provisional design documentation** in PRs #18–20. Their post-merge alignment provides explicit **paper** tick/observation/interlock traces; formal acceptance, runnable tests, Ghost settlement/numerics, Bell/Beat execution and concrete bindings remain open at named later gates.
-- [ ] Record falsifiable acceptance examples and negative cases for every contract before implementation.
+- [x] Close **Stage 0's blueprint decisions provisionally**: merged [Gate 1 authority proposal](reviews/STAGE0_GATE1_RECONCILIATION_PROPOSAL.md), [Gate 2 chandelier fixture](design/STAGE0_GATE2_CHANDELIER_MECHANISM.md), [Gate 3 trial protocol](design/STAGE0_GATE3_JUDGMENT_TRIAL_PROTOCOL.md), [Gate 4 packet](reviews/STAGE0_GATE4_CLOSEOUT_PROPOSAL.md), and explicit [owner design-exit decision](reviews/STAGE0_EXIT_DECISION.md). This is **design acceptance**, not runnable-contract approval; later testing, numeric choices, Ghost/Bell execution and concrete bindings remain gated.
+- [x] Record **stage-assigned** falsifiable examples and negative cases for the first-slice contracts and explicit later deferrals: the [Gate 4 C00–C12 matrix](reviews/STAGE0_GATE4_CLOSEOUT_PROPOSAL.md) identifies responsibility, supported negatives and later owners. The 59 labeled G1/F2/V/T3 cases remain **paper-only**. Executable tests must be selected and run before their affected behavior is accepted.
 
-**Stage 0 remains open.** No implementation, art-production or release authority follows from SF-0004.
+**Stage 0 is PROVISIONALLY CLOSED at the design/documentation level** by owner decision on 2026-11-16; see [formal exit](reviews/STAGE0_EXIT_DECISION.md) and SF-0009. The A02 timing/accessibility and A03 measurement conditions remain open for the affected future experimental frontiers. No gameplay implementation, participant-study or public-release authority follows.
 
 **Exit evidence:** the owner can describe one small playable Adventure and the interactions/contracts required to run it, without mistaking an illustration for a settled API. No gameplay implementation required. Any numerical tuning remains provisional.
 
 **Non-goals:** implementing AI, creating art assets, writing episode tooling, choosing a release window, or freezing all future interfaces.
 
 ## Stage 1 — Choose a visual language, then validate it
+
+**Current stage — authorized 2026-11-16.** Start with the bounded [STAGE1-VISUAL-01 work order](reviews/STAGE1_VISUAL_WORK_ORDER.md). Art-skill development in KestrelGaming is an optional, separately scoped prerequisite, not an automatic Stage Fright dependency. No final style or production asset is approved yet.
 
 **Purpose:** decide how the *first Adventure* should look and feel, without baking art style into gameplay rules.
 
