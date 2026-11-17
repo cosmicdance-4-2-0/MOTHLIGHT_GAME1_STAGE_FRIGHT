@@ -1,0 +1,285 @@
+{
+  "checkedAt": "2026-11-17T04:38:56.222Z",
+  "method": "Node + sharp decoded-pixel comparisons; not human trials",
+  "results": [
+    {
+      "name": "shot-wing-01-normal dimensions",
+      "pass": true,
+      "details": "1280x720 display, 320x180 logical"
+    },
+    {
+      "name": "shot-wing-01-normal nearest-neighbor grid",
+      "pass": true,
+      "details": {
+        "channelMismatches": 0
+      }
+    },
+    {
+      "name": "shot-wing-01-normal opaque palette",
+      "pass": true,
+      "details": {
+        "offPalettePixels": 0,
+        "nonopaquePixels": 0
+      }
+    },
+    {
+      "name": "shot-wing-01-common-initial dimensions",
+      "pass": true,
+      "details": "1280x720 display, 320x180 logical"
+    },
+    {
+      "name": "shot-wing-01-common-initial nearest-neighbor grid",
+      "pass": true,
+      "details": {
+        "channelMismatches": 0
+      }
+    },
+    {
+      "name": "shot-wing-01-common-initial opaque palette",
+      "pass": true,
+      "details": {
+        "offPalettePixels": 0,
+        "nonopaquePixels": 0
+      }
+    },
+    {
+      "name": "stagehand-pose-scale-sheet dimensions",
+      "pass": true,
+      "details": "1280x720 display, 320x180 logical"
+    },
+    {
+      "name": "stagehand-pose-scale-sheet nearest-neighbor grid",
+      "pass": true,
+      "details": {
+        "channelMismatches": 0
+      }
+    },
+    {
+      "name": "stagehand-pose-scale-sheet opaque palette",
+      "pass": true,
+      "details": {
+        "offPalettePixels": 0,
+        "nonopaquePixels": 0
+      }
+    },
+    {
+      "name": "outcome-1 dimensions",
+      "pass": true,
+      "details": "1280x720 display, 320x180 logical"
+    },
+    {
+      "name": "outcome-1 nearest-neighbor grid",
+      "pass": true,
+      "details": {
+        "channelMismatches": 0
+      }
+    },
+    {
+      "name": "outcome-1 opaque palette",
+      "pass": true,
+      "details": {
+        "offPalettePixels": 0,
+        "nonopaquePixels": 0
+      }
+    },
+    {
+      "name": "outcome-2 dimensions",
+      "pass": true,
+      "details": "1280x720 display, 320x180 logical"
+    },
+    {
+      "name": "outcome-2 nearest-neighbor grid",
+      "pass": true,
+      "details": {
+        "channelMismatches": 0
+      }
+    },
+    {
+      "name": "outcome-2 opaque palette",
+      "pass": true,
+      "details": {
+        "offPalettePixels": 0,
+        "nonopaquePixels": 0
+      }
+    },
+    {
+      "name": "outcome-3 dimensions",
+      "pass": true,
+      "details": "1280x720 display, 320x180 logical"
+    },
+    {
+      "name": "outcome-3 nearest-neighbor grid",
+      "pass": true,
+      "details": {
+        "channelMismatches": 0
+      }
+    },
+    {
+      "name": "outcome-3 opaque palette",
+      "pass": true,
+      "details": {
+        "offPalettePixels": 0,
+        "nonopaquePixels": 0
+      }
+    },
+    {
+      "name": "outcome-4 dimensions",
+      "pass": true,
+      "details": "1280x720 display, 320x180 logical"
+    },
+    {
+      "name": "outcome-4 nearest-neighbor grid",
+      "pass": true,
+      "details": {
+        "channelMismatches": 0
+      }
+    },
+    {
+      "name": "outcome-4 opaque palette",
+      "pass": true,
+      "details": {
+        "offPalettePixels": 0,
+        "nonopaquePixels": 0
+      }
+    },
+    {
+      "name": "A/B initial single image reference",
+      "pass": true,
+      "details": {
+        "image": "shot-wing-01-common-initial.png",
+        "caption": "EARLY SWAY. A SOFT CLICK. THE PERFORMER WAITS."
+      }
+    },
+    {
+      "name": "A/B initial single caption reference",
+      "pass": true,
+      "details": "Both resolve to commonInitial.caption"
+    },
+    {
+      "name": "Held A/B same physical rendering",
+      "pass": true,
+      "details": "Different case captions are review annotations in the contact sheet."
+    },
+    {
+      "name": "Normal/initial camera and scenery unchanged",
+      "pass": true,
+      "details": {
+        "changedPixels": 1024,
+        "outsideChandelierOrCaption": 0
+      }
+    },
+    {
+      "name": "No-Hold outcome background unchanged outside fixture",
+      "pass": true,
+      "details": {
+        "outsideChandelierAndTrim": 0
+      }
+    },
+    {
+      "name": "three-quarter 32px binary alpha",
+      "pass": true,
+      "details": {
+        "height": 32,
+        "partialAlpha": 0
+      }
+    },
+    {
+      "name": "three-quarter 40px binary alpha",
+      "pass": true,
+      "details": {
+        "height": 40,
+        "partialAlpha": 0
+      }
+    },
+    {
+      "name": "three-quarter 48px binary alpha",
+      "pass": true,
+      "details": {
+        "height": 48,
+        "partialAlpha": 0
+      }
+    },
+    {
+      "name": "profile 32px binary alpha",
+      "pass": true,
+      "details": {
+        "height": 32,
+        "partialAlpha": 0
+      }
+    },
+    {
+      "name": "profile 40px binary alpha",
+      "pass": true,
+      "details": {
+        "height": 40,
+        "partialAlpha": 0
+      }
+    },
+    {
+      "name": "profile 48px binary alpha",
+      "pass": true,
+      "details": {
+        "height": 48,
+        "partialAlpha": 0
+      }
+    },
+    {
+      "name": "rear 32px binary alpha",
+      "pass": true,
+      "details": {
+        "height": 32,
+        "partialAlpha": 0
+      }
+    },
+    {
+      "name": "rear 40px binary alpha",
+      "pass": true,
+      "details": {
+        "height": 40,
+        "partialAlpha": 0
+      }
+    },
+    {
+      "name": "rear 48px binary alpha",
+      "pass": true,
+      "details": {
+        "height": 48,
+        "partialAlpha": 0
+      }
+    },
+    {
+      "name": "braced 32px binary alpha",
+      "pass": true,
+      "details": {
+        "height": 32,
+        "partialAlpha": 0
+      }
+    },
+    {
+      "name": "braced 40px binary alpha",
+      "pass": true,
+      "details": {
+        "height": 40,
+        "partialAlpha": 0
+      }
+    },
+    {
+      "name": "braced 48px binary alpha",
+      "pass": true,
+      "details": {
+        "height": 48,
+        "partialAlpha": 0
+      }
+    }
+  ],
+  "hashes": {
+    "composition-guide.svg": "94ed296ce844acfe591188d095aad64209a6c879450e1d55e95e5fbcc009718f",
+    "style-board.png": "d41be59f1fb0900c87b719bf2cda0aa2554262f99bedc63058ee2716acbb982f",
+    "shot-wing-01-normal.png": "f19edcb343abd65d99065e19eea3b4e4faea22b1ef3c0ea32cc8eaf7f8d71b82",
+    "shot-wing-01-common-initial.png": "097ed736cf5f143601f69ee53c820212f10122878051d27b4399e9e6243f7afc",
+    "evidence-contact-sheet.png": "6f49cbd9c259c7fdc36ca9a753c9db8088e1825e458392f5f301134388cb5360",
+    "outcomes-contact-sheet.png": "fd067eaa64a51c143217bdc4b9ad9ee1734a64f951e4fb2ca2cd39219ae7a7a2",
+    "shot-rig-detail-01.png": "7e93fce40b49226acc94115eaea15bc488a153f26af74ceae3b99c5d9a763ed2",
+    "stagehand-pose-scale-sheet.png": "ada3050fec88ba4ade3555c7bee31be9f07e57e758c416c3f425ab40b98a8913"
+  }
+}

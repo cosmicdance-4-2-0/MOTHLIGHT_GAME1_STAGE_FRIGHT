@@ -1,0 +1,21 @@
+{
+  "purpose": "Editable text alternatives for the static visual study; not a runtime schema or unlocked player knowledge.",
+  "initial": "Early sway. A soft click. The performer waits.",
+  "desk": {
+    "availability": "Only after legal local timed Read completes; Production intent only.",
+    "A": "Effective CHAND_FLOURISH revision 2. Early flourish; early window. Signed E. Vale. This is a signed early revision, not a physical limiter observation.",
+    "B": "Effective CHAND_FLOURISH revision 1. Ordinary flourish; ordinary window. Signed E. Vale. No early revision is posted. No physical limiter fact is given."
+  },
+  "rig": {
+    "availability": "Only after legal local timed Inspect completes; local physical observation.",
+    "A": "Witness mark aligned within the marked window. Observed travel stays within the marks.",
+    "B": "Witness mark outside the marked window. Observed travel extends beyond the marks; scrape visible beyond the bracket."
+  },
+  "outcomes": [
+    {"case": "A", "decision": "No Hold", "world": "Trim intact", "show": "Beat satisfied"},
+    {"case": "A", "decision": "Valid unnecessary Hold", "world": "Trim intact", "show": "Beat missed"},
+    {"case": "B", "decision": "Timely Hold", "world": "Trim intact", "show": "Beat missed"},
+    {"case": "B", "decision": "No Hold through commitment", "world": "Trim disturbed", "show": "Beat blocked"}
+  ],
+  "limitations": "Signature, revision IDs and symbolic windows are illustrative, not accepted Production content. No exact ticks or timing claims. Text alternatives are retained, not integrated or human-tested."
+}

@@ -1,0 +1,65 @@
+{
+  "assignment": "S1-02P-FULL-PIXEL",
+  "room": "wing-and-stage",
+  "shot": "SHOT-WING-01",
+  "logicalSize": [
+    320,
+    180
+  ],
+  "displayScale": 4,
+  "commonInitial": {
+    "image": "shot-wing-01-common-initial.png",
+    "caption": "EARLY SWAY. A SOFT CLICK. THE PERFORMER WAITS."
+  },
+  "cases": {
+    "A": {
+      "initial": "shot-wing-01-common-initial.png",
+      "captionKey": "commonInitial.caption"
+    },
+    "B": {
+      "initial": "shot-wing-01-common-initial.png",
+      "captionKey": "commonInitial.caption"
+    }
+  },
+  "anchorsDisplay": {
+    "chandelierNormal": [
+      680,
+      220
+    ],
+    "chandelierInitial": [
+      688,
+      220
+    ],
+    "stagehandFeet": [
+      152,
+      600
+    ],
+    "performerFeet": [
+      932,
+      440
+    ],
+    "VIEW": [
+      180,
+      616
+    ],
+    "DESK": [
+      420,
+      520
+    ],
+    "RIG": [
+      808,
+      528
+    ],
+    "HOLD": [
+      1112,
+      528
+    ]
+  },
+  "topology": [
+    "VIEW",
+    "DESK",
+    "RIG",
+    "HOLD"
+  ],
+  "note": "Art coordinates only. Not world geometry, timing, hitboxes or runtime configuration."
+}

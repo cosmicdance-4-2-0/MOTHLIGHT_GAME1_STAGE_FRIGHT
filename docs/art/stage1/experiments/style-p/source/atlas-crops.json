@@ -1,0 +1,38 @@
+{
+  "stagehand-three-quarter": {
+    "left": 171,
+    "top": 54,
+    "width": 142,
+    "height": 352
+  },
+  "stagehand-profile": {
+    "left": 609,
+    "top": 54,
+    "width": 119,
+    "height": 352
+  },
+  "stagehand-rear": {
+    "left": 1035,
+    "top": 54,
+    "width": 141,
+    "height": 352
+  },
+  "stagehand-braced": {
+    "left": 1350,
+    "top": 76,
+    "width": 331,
+    "height": 330
+  },
+  "performer": {
+    "left": 386,
+    "top": 472,
+    "width": 177,
+    "height": 381
+  },
+  "chandelier": {
+    "left": 1023,
+    "top": 509,
+    "width": 444,
+    "height": 322
+  }
+}
