@@ -8,6 +8,18 @@ This log tracks **recorded development integrations** rather than public release
 - **Art status correction:** PR #2 merged at `3e6386f258c73141b35e109a3c1b510e5b2e30b9`; its derivative/provenance are present, while original full-resolution PNGs remain outside this repository. SF-0004 does not claim that PR #2 had a separate version record.
 - **Gameplay tests:** no Stage 2 player trials or simulation implementation is authorized by this record.
 
+## [0.0.2.10/SF-0010] — 2026-11-16
+
+**Purpose:** first reviewable **Stage 1 fixed-camera/evidence specification and provisional Stagehand silhouette probe**, not a selected art direction or implemented game scene.
+
+**Added:** [S1-01 Shot/Stagehand study](docs/art/stage1/S1-01_FIXED_SHOT_AND_STAGEHAND.md) and [SVG silhouette diagnostic](docs/art/stage1/stagehand-silhouette-probe-s1-01.svg). Preserves matched initial Cue/fault symptom, four station-local observation boundaries, visual accessibility obligations, and testable VIS-01…VIS-07 criteria. Test sizes, character shape and styling remain candidates, not canonical constants.
+
+**Source:** [Stage 1 authorized work order](docs/reviews/STAGE1_VISUAL_WORK_ORDER.md) at `main@4cae5cee3f80c94ac5817965983195ec186428b5`. A separate image-generated character concept sheet was supplied as a **conversation attachment**; not committed, not a sprite sheet or verified accessible design.
+
+**No work claimed:** no matched Style P/M render evaluation, physical timing proof, Stage 2 gameplay, real user study, sprite animation or Art Pack implementation. Original Mothlight avatar and other agents' authored materials remain unchanged.
+
+**Affected paths:** `docs/art/stage1/S1-01_FIXED_SHOT_AND_STAGEHAND.md`, `docs/art/stage1/stagehand-silhouette-probe-s1-01.svg`, `docs/changes/SF-0010.md`, `CHANGELOG.md`, `version.json`. Documentation/diagnostic art only; Revision remains 2; proposed Build 10 applies on merge. [Change record SF-0010](docs/changes/SF-0010.md).
+
 ## [0.0.2.9/SF-0009] — 2026-11-16
 
 **Purpose:** record the owner's **provisional Stage 0 design exit** and explicit authorization to start a **bounded Stage 1 visual comparison**, after [PR #24](https://github.com/cosmicdance-4-2-0/MOTHLIGHT_GAME1_STAGE_FRIGHT/pull/24) integrated the Gate 4 decision packet as SF-0008.

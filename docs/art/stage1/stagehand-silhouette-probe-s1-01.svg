@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="370" viewBox="0 0 1040 370" role="img" aria-labelledby="title desc">
+  <title id="title">Stagehand silhouette probe, S1-01, four full-body views</title>
+  <desc id="desc">Candidate stagehand body shapes shown as dark silhouettes: front three-quarter, side, back, and braced operation of a separate Hold lever. Practical attire with boots and a tool pouch. This is a shape-test diagram, not canonical sprite art or a gameplay rig.</desc>
+  <rect width="1040" height="370" fill="#eeebe4"/>
+  <text x="520" y="32" font-family="monospace" font-size="18" font-weight="bold" fill="#242337" text-anchor="middle">STAGEHAND / SILHOUETTE PROBE / S1-01</text>
+  <text x="520" y="51" font-family="monospace" font-size="11" fill="#575467" text-anchor="middle">FORM STUDY — NOT FINAL CAST DESIGN, SPRITE GRID OR AUTHORITY</text>
+  <g font-family="monospace" font-size="13" fill="#353346" text-anchor="middle">
+    <text x="140" y="336">THREE-QUARTER</text><text x="390" y="336">PROFILE</text><text x="640" y="336">BACK</text><text x="890" y="336">HOLD OPERATION</text>
+  </g>
+  <g fill="none" stroke="#bcb7b6" stroke-width="1">
+    <rect x="25" y="70" width="230" height="278" rx="9"/>
+    <rect x="275" y="70" width="230" height="278" rx="9"/>
+    <rect x="525" y="70" width="230" height="278" rx="9"/>
+    <rect x="775" y="70" width="240" height="278" rx="9"/>
+    <path d="M50 295H230M300 295H480M550 295H730M800 295H990" stroke-dasharray="4 5"/>
+  </g>
+  <!-- Candidate 1: front-three-quarter silhouette, 74 by 189 inside a neutral station panel -->
+  <g transform="translate(101 93)" fill="#252434">
+    <circle cx="31" cy="20" r="18"/>
+    <circle cx="15" cy="20" r="10"/>
+    <path d="M25 37 L38 37 40 47 23 47Z"/>
+    <path d="M15 45 L48 43 59 87 52 112 13 112 8 85Z"/>
+    <path d="M15 50 Q5 49 3 62 L-1 110 10 117 19 100 24 55Z"/>
+    <path d="M49 48 Q63 46 67 58 L75 105 63 116 52 98 46 54Z"/>
+    <path d="M13 107 L53 107 50 142 39 184 20 184 18 142Z"/>
+    <path d="M34 126 L53 115 62 182 45 189Z"/>
+    <path d="M14 184 L38 182 42 204 5 204 6 197Z"/>
+    <path d="M43 185 L63 184 72 203 40 203Z"/>
+    <path d="M53 87 L76 88 76 126 54 126Z"/>
+  </g>
+  <!-- Candidate 2: narrow side view, pouch remains readable -->
+  <g transform="translate(351 93)" fill="#252434">
+    <circle cx="31" cy="20" r="18"/>
+    <circle cx="14" cy="21" r="10"/>
+    <path d="M42 15 L53 23 42 29Z"/>
+    <path d="M24 37 L37 37 39 48 26 48Z"/>
+    <path d="M24 45 L45 45 53 111 20 112Z"/>
+    <path d="M30 53 Q14 59 18 84 L19 113 32 113 33 65Z"/>
+    <path d="M19 110 L51 110 53 143 48 189 30 189 27 145Z"/>
+    <path d="M41 126 L54 119 65 186 47 187Z"/>
+    <path d="M27 185 L51 185 60 204 21 204Z"/>
+    <path d="M43 185 L67 185 75 203 44 203Z"/>
+    <path d="M7 84 L28 84 29 123 5 123Z"/>
+  </g>
+  <!-- Candidate 3: rear, distinguish tool bag and boots -->
+  <g transform="translate(601 93)" fill="#252434">
+    <circle cx="31" cy="20" r="18"/>
+    <circle cx="13" cy="18" r="10"/>
+    <path d="M25 37 L38 37 40 47 24 47Z"/>
+    <path d="M15 45 L48 45 59 111 9 111Z"/>
+    <path d="M15 50 Q4 50 0 62 L-5 110 8 117 20 100 24 55Z"/>
+    <path d="M49 49 Q63 50 67 60 L74 108 61 116 50 100 45 55Z"/>
+    <path d="M12 110 L54 110 43 184 25 185 20 143Z"/>
+    <path d="M38 124 L58 117 63 185 46 187Z"/>
+    <path d="M22 183 L43 183 40 203 8 203Z"/>
+    <path d="M45 184 L65 183 73 202 44 203Z"/>
+    <path d="M52 86 L74 85 75 128 55 128Z"/>
+  </g>
+  <!-- Candidate 4: braced non-telekinetic action, lever visually separate -->
+  <g transform="translate(839 92)" fill="#252434">
+    <circle cx="51" cy="30" r="17"/>
+    <circle cx="37" cy="28" r="9"/>
+    <path d="M46 45 L63 41 86 58 73 96 44 105 19 81Z"/>
+    <path d="M72 57 L102 45 127 19 135 26 111 59 80 80Z"/>
+    <path d="M61 65 L100 65 124 30 133 37 109 84 67 94Z"/>
+    <path d="M27 81 L52 105 35 137 -9 184 -30 176 12 115Z"/>
+    <path d="M49 98 L75 91 88 145 110 185 87 195 60 157Z"/>
+    <path d="M-31 170 L-11 181 -26 205 -64 204 -61 191Z"/>
+    <path d="M85 187 L112 182 127 201 88 205Z"/>
+    <path d="M22 91 L6 102 19 131 41 117Z"/>
+  </g>
+  <g stroke="#8b6447" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M964 116 L968 191 M956 194 H982 V275 H947"/>
+    <circle cx="964" cy="116" r="7" fill="#8b6447"/>
+  </g>
+  <text x="520" y="365" font-family="monospace" font-size="10" fill="#575467" text-anchor="middle">CONSISTENCY PROBE: identical functional gear; no lantern, moth wings, Ghost or production-era identifier</text>
+</svg>
